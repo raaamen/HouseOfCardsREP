@@ -12,11 +12,14 @@ public class PlayerScript : MonoBehaviour
     public int HP;
     public int Direction;
 
+
     // Start is called before the first frame update
     void Start()
     {
         HP = 4;
         Direction = 3;
+
+
     }
 
     // Update is called once per frame
@@ -43,24 +46,30 @@ public class PlayerScript : MonoBehaviour
             GetComponent<Transform>().position += right;
             Direction = 3;
         }
+
+
         // Allows the player to shoot
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.K))
         {
+            //Facing North
             if (Direction == 1)
             {
-                Instantiate(throwingCard);
+                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
             }
+            //Facing South
             if (Direction == 2)
             {
-                Instantiate(throwingCard);
+                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
             }
+            //Facing East
             if (Direction == 3)
             {
-                Instantiate(throwingCard);
+                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
             }
+            //Facing West
             if (Direction == 4)
             {
-                Instantiate(throwingCard);
+                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
             }
 
 
@@ -69,4 +78,3 @@ public class PlayerScript : MonoBehaviour
     }
 
 }
-
