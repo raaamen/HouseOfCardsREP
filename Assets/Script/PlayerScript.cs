@@ -1,23 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
+    //GameObjects
     public GameObject throwingCard;
+
+    //Vectors
     public Vector3 up;
     public Vector3 down;
     public Vector3 left;
     public Vector3 right;
-    public int HP;
+
+    //Ints
+    public int curHP;
+    public int maxHP = 100;
     public int Direction;
+
+    //Floats
+
+    //Booleans
+
+
+    //Refrences
 
     // Start is called before the first frame update
     void Start()
     {
-        HP = 4;
+
+        curHP = maxHP;
         Direction = 3;
 
+<<<<<<< HEAD:Assets/Script/PlayerScript.cs
+=======
+
+>>>>>>> 31d90361831fc7216bb479745a3960e6f4e4144b:Assets/PlayerScript.cs
     }
 
     // Update is called once per frame
@@ -44,30 +63,51 @@ public class PlayerScript : MonoBehaviour
             GetComponent<Transform>().position += right;
             Direction = 3;
         }
+
+
         // Allows the player to shoot
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.K))
         {
+            //Facing North
             if (Direction == 1)
             {
-                Instantiate(throwingCard);
+                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
             }
+            //Facing South
             if (Direction == 2)
             {
-                Instantiate(throwingCard);
+                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
             }
+            //Facing East
             if (Direction == 3)
             {
-                Instantiate(throwingCard);
+                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
             }
+            //Facing West
             if (Direction == 4)
             {
-                Instantiate(throwingCard);
+                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
             }
 
 
         }
 
+
+        if (curHP > maxHP)
+        {
+            curHP = maxHP;
+        }
+        if (curHP <= 0)
+        {
+            Die();
+        }
+
+    }
+    void Die()
+    {
+        //Restart
+        SceneManager.LoadScene("Testt");
     }
 
-}
 
+}
