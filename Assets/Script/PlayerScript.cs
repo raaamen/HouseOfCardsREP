@@ -17,6 +17,7 @@ public class PlayerScript : MonoBehaviour
     {
         HP = 4;
         Direction = 3;
+
     }
 
     // Update is called once per frame

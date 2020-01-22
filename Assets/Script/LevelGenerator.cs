@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-
 public class LevelGenerator : MonoBehaviour
 {
     public Texture2D map;
