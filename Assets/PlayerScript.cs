@@ -1,22 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
+    //GameObjects
     public GameObject throwingCard;
+
+    //Vectors
     public Vector3 up;
     public Vector3 down;
     public Vector3 left;
     public Vector3 right;
-    public int HP;
+
+    //Ints
+    public int curHP;
+    public int maxHP = 100;
     public int Direction;
 
+    //Floats
+
+    //Booleans
+
+
+    //Refrences
 
     // Start is called before the first frame update
     void Start()
     {
-        HP = 4;
+
+        curHP = maxHP;
         Direction = 3;
 
 
@@ -75,6 +89,22 @@ public class PlayerScript : MonoBehaviour
 
         }
 
+
+        if (curHP > maxHP)
+        {
+            curHP = maxHP;
+        }
+        if (curHP <= 0)
+        {
+            Die();
+        }
+
     }
+    void Die()
+    {
+        //Restart
+        SceneManager.LoadScene("Testt");
+    }
+
 
 }

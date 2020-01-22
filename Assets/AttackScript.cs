@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class AttackScript : MonoBehaviour
 {
+    //Refrences
     public Collider2D attackTrigger;
+
+    //Ints
     public int Direction;
+
+    //Floats
     public float attackTimer;
     public float attackCoolDown;
+
+    //Booleans
     private bool attacking;
     // Start is called before the first frame update
     void Start()
