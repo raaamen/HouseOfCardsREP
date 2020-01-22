@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerScript : MonoBehaviour
 {
     //GameObjects
-    public GameObject throwingCard;
+
 
     //Vectors
     public Vector3 up;
@@ -22,9 +22,13 @@ public class PlayerScript : MonoBehaviour
     //Floats
 
     //Booleans
-
+    public bool lookingRight  =  true;
 
     //Refrences
+    public GameObject throwingCard;
+    public Transform Target;
+    public Transform shootPointRight;
+    public Transform shootPointLeft;
 
     // Start is called before the first frame update
     void Start()
@@ -64,33 +68,41 @@ public class PlayerScript : MonoBehaviour
             Direction = 3;
         }
 
+        if (Target.transform.position.x > transform.position.x)
+        {
+            lookingRight = true;
+        }
+        if (Target.transform.position.x < transform.position.x)
+        {
+            lookingRight = false;
+        }
 
         // Allows the player to shoot
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            //Facing North
-            if (Direction == 1)
-            {
-                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
-            }
-            //Facing South
-            if (Direction == 2)
-            {
-                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
-            }
-            //Facing East
-            if (Direction == 3)
-            {
-                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
-            }
-            //Facing West
-            if (Direction == 4)
-            {
-                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
-            }
+        //if (Input.GetKeyDown(KeyCode.K))
+        //{
+        //Facing North
+        //if (Direction == 1)
+        //{
+        //Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
+        //}
+        //Facing South
+        //if (Direction == 2)
+        //{
+        //Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
+        //}
+        //Facing East
+        //if (Direction == 3)
+        //{
+        //Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
+        //}
+        //Facing West
+        //if (Direction == 4)
+        //{
+        //Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
+        //}
 
 
-        }
+    }
 
 
         if (curHP > maxHP)

@@ -7,9 +7,13 @@ public class CameraFollow : MonoBehaviour
     public GameObject Player;
 
     private Vector2 velocity;
+    public Vector3 minCameraPos;
+    public Vector3 maxCameraPos;
 
     public float smoothTimeX;
     public float smoothTimeY;
+
+    public bool Bounds;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +27,13 @@ public class CameraFollow : MonoBehaviour
         float posY = Mathf.SmoothDamp(transform.position.y, Player.transform.position.y, ref velocity.y, smoothTimeY);
 
         transform.position = new Vector3(posX, posY, transform.position.z);
+
+        if (Bounds)
+        {
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, minCameraPos.x, maxCameraPos.x),
+                Mathf.Clamp(transform.position.y, minCameraPos.y, minCameraPos.y),
+                Mathf.Clamp(transform.position.z, minCameraPos.z, maxCameraPos.z));
+
+        }
     }
 }
