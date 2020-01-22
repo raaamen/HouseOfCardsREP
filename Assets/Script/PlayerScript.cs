@@ -38,10 +38,10 @@ public class PlayerScript : MonoBehaviour
         curHP = maxHP;
         Direction = 3;
 
-<<<<<<< HEAD:Assets/Script/PlayerScript.cs
-=======
+//<<<<<<< HEAD:Assets/Script/PlayerScript.cs
+//=======
 
->>>>>>> 31d90361831fc7216bb479745a3960e6f4e4144b:Assets/PlayerScript.cs
+//>>>>>>> 31d90361831fc7216bb479745a3960e6f4e4144b:Assets/PlayerScript.cs
     }
 
     // Update is called once per frame
