@@ -15,6 +15,7 @@ public class PlayerScript : MonoBehaviour
     public Vector3 right;
 
     //Ints
+
     public int curHP;
     public int maxHP = 100;
     public int Direction;
@@ -98,10 +99,6 @@ public class PlayerScript : MonoBehaviour
         //Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
         //}
 
-
-    }
-
-
         if (curHP > maxHP)
         {
             curHP = maxHP;
@@ -112,6 +109,11 @@ public class PlayerScript : MonoBehaviour
         }
 
     }
+
+
+        
+
+
     void Die()
     {
         //Restart
