@@ -18,10 +18,10 @@ public class ThrowingCardScript : MonoBehaviour
     {
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
 
-        up.y = (5);
-        down.y = (-5);
-        left.x = (-5);
-        right.x = (5);
+        up.y = (1);
+        down.y = (-1);
+        left.x = (-1);
+        right.x = (1);
     }
 
     // Update is called once per frame
@@ -47,6 +47,14 @@ public class ThrowingCardScript : MonoBehaviour
         }
         if (timer >= 5)
         {
+            Destroy(gameObject);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(collision.gameObject);
             Destroy(gameObject);
         }
     }

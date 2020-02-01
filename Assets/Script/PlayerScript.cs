@@ -34,9 +34,6 @@ public class PlayerScript : MonoBehaviour
         Direction = 3;
     }
 
-
-
-    // Update is called once per frame
     void Update()
     {
         // Allows the player to use WASD for movement.
@@ -60,6 +57,7 @@ public class PlayerScript : MonoBehaviour
         {
             lookingRight = true;
         }
+        
 
         //Allows the player to shoot
         if (Input.GetKeyDown(KeyCode.Space))
