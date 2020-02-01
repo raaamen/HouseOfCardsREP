@@ -39,7 +39,10 @@ public class PlayerScript : MonoBehaviour
     }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2424f10f8c463fdd0762929449e45557f754f417
 
     // Update is called once per frame
     void Update()
