@@ -501,7 +501,8 @@ MonoBehaviour:
     type: 3}
   throwingCard3: {fileID: 4365332314510089528, guid: df25fc0dff6658d40bb9823bc1cd6bcf,
     type: 3}
-  throwingCard4: {fileID: 0}
+  throwingCard4: {fileID: 5652454831798775770, guid: ee15379b78b9cc54dbb9f6adfc2b3fe3,
+    type: 3}
 --- !u!50 &1331164600
 Rigidbody2D:
   serializedVersion: 4
