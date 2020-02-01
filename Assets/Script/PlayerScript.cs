@@ -105,6 +105,14 @@ public class PlayerScript : MonoBehaviour
         {
             Die();
         }
+        if (curHP <= 50)
+        {
+            Debug.Log("You are Halfway from dying");
+        }
+        if (curHP <= 25)
+        {
+            Debug.Log("You are almost dead");
+        }
 
 
     }
@@ -115,6 +123,8 @@ public class PlayerScript : MonoBehaviour
     void Die()
     {
         //Restart
-        SceneManager.LoadScene("Testt");
+        Debug.Log("You Died!");
+        SceneManager.LoadScene("q");
+
     }
 }

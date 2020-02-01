@@ -43,12 +43,12 @@ public class EnemyScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            player.Damage(3);
+            player.Damage(5);
         }
     }
     public void TakeDamage(int damage)
     {
         curHealth -= damage;
-        Debug.Log("Damage Taken");
+
     }
 }
