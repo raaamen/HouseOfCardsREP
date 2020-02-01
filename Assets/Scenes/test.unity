@@ -491,6 +491,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a240b4200199f40adf2ebe52c36b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Offset1: {x: 0, y: 1, z: 0}
+  Offset2: {x: -1, y: 0, z: 0}
+  Offset3: {x: 1, y: 0, z: 0}
+  Offset4: {x: 0, y: -1, z: 0}
   curHP: 0
   maxHP: 100
   Direction: 0
