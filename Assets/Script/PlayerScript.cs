@@ -69,7 +69,7 @@ public class PlayerScript : MonoBehaviour
             Direction = 3;
         }
 
-        if (Target.transform.position.x > transform.position.x)
+ 
         {
             lookingRight = true;
         }
