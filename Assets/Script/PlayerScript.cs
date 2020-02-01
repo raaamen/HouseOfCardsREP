@@ -34,7 +34,7 @@ public class PlayerScript : MonoBehaviour
 
         curHP = maxHP;
         Direction = 3;
-    }
+}
 
     // Update is called once per frame
     void Update()
