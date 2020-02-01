@@ -34,7 +34,10 @@ public class PlayerScript : MonoBehaviour
 
         curHP = maxHP;
         Direction = 3;
+<<<<<<< HEAD
         
+=======
+>>>>>>> 9422376bb57a80ae30e80d40c7b099db60285107
     }
 
     // Update is called once per frame
@@ -61,7 +64,10 @@ public class PlayerScript : MonoBehaviour
             GetComponent<Transform>().position += right;
             Direction = 3;
         }
-
+ 
+        {
+            lookingRight = true;
+        }
 
         //Allows the player to shoot
         if (Input.GetKeyDown(KeyCode.K))

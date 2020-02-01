@@ -233,7 +233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be039050f74795b4d97e7a25ae0d9bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 2080088636}
   movementSpeed: 4
 --- !u!212 &751667920
 SpriteRenderer:
@@ -292,7 +291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751667918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.320347, y: 3.8547726, z: 0}
+  m_LocalPosition: {x: 9.13, y: 3.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -439,10 +438,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a240b4200199f40adf2ebe52c36b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwingCard: {fileID: 0}
   up: {x: 0, y: 1, z: 0}
   down: {x: 0, y: -1, z: 0}
   left: {x: -1, y: 0, z: 0}
   right: {x: 1, y: 0, z: 0}
-  HP: 0
+  curHP: 0
+  maxHP: 100
   Direction: 0
+  lookingRight: 1
+  throwingCard: {fileID: 0}
+  Target: {fileID: 0}
+  shootPointRight: {fileID: 0}
+  shootPointLeft: {fileID: 0}
