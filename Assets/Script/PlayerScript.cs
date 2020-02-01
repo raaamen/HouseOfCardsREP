@@ -23,13 +23,10 @@ public class PlayerScript : MonoBehaviour
     //Floats
 
     //Booleans
-    public bool lookingRight  =  true;
+    public bool lookingRight = true;
 
     //Refrences
     public GameObject throwingCard;
-    public Transform Target;
-    public Transform shootPointRight;
-    public Transform shootPointLeft;
 
     // Start is called before the first frame update
     void Start()
@@ -37,11 +34,6 @@ public class PlayerScript : MonoBehaviour
 
         curHP = maxHP;
         Direction = 3;
-
-//<<<<<<< HEAD:Assets/Script/PlayerScript.cs
-//=======
-
-//>>>>>>> 31d90361831fc7216bb479745a3960e6f4e4144b:Assets/PlayerScript.cs
     }
 
     // Update is called once per frame
@@ -68,40 +60,39 @@ public class PlayerScript : MonoBehaviour
             GetComponent<Transform>().position += right;
             Direction = 3;
         }
-
  
         {
             lookingRight = true;
         }
-        if (Target.transform.position.x < transform.position.x)
+
+        //Allows the player to shoot
+        if (Input.GetKeyDown(KeyCode.K))
         {
-            lookingRight = false;
+            //Facing North
+            if (Direction == 1)
+            {
+                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
+            }
+            //Facing South
+            if (Direction == 2)
+            {
+                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
+            }
+            //Facing East
+            if (Direction == 3)
+            {
+                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
+            }
+            //Facing West
+            if (Direction == 4)
+            {
+                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
+            }
+
+
+
+
         }
-
-        // Allows the player to shoot
-        //if (Input.GetKeyDown(KeyCode.K))
-        //{
-        //Facing North
-        //if (Direction == 1)
-        //{
-        //Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
-        //}
-        //Facing South
-        //if (Direction == 2)
-        //{
-        //Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
-        //}
-        //Facing East
-        //if (Direction == 3)
-        //{
-        //Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
-        //}
-        //Facing West
-        //if (Direction == 4)
-        //{
-        //Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
-        //}
-
         if (curHP > maxHP)
         {
             curHP = maxHP;
@@ -111,17 +102,15 @@ public class PlayerScript : MonoBehaviour
             Die();
         }
 
+
     }
-
-
-        
-
-
+    public void Damage(int dmg)
+    {
+        curHP -= dmg;
+    }
     void Die()
     {
         //Restart
         SceneManager.LoadScene("Testt");
     }
-
-
 }
