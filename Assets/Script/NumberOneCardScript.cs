@@ -22,4 +22,9 @@ public class NumberOneCardScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public void TakeDamage(int damage)
+    {
+        curHP -= damage;
+        Debug.Log("Damage Taken");
+    }
 }
