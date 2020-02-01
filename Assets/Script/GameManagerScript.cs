@@ -15,19 +15,14 @@ public class GameManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemyTimer += Time.deltaTime;
-        Instantiate(enemyPrefab1, enemyPos1, Quaternion.identity);
-        Instantiate(enemyPrefab1, enemyPos2, Quaternion.identity);
-        Instantiate(enemyPrefab1, enemyPos3, Quaternion.identity);
-        Instantiate(enemyPrefab1, enemyPos4, Quaternion.identity);
-        Instantiate(enemyPrefab1, enemyPos5, Quaternion.identity);
-        Instantiate(enemyPrefab1, enemyPos6, Quaternion.identity);
+        enemyTimer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (enemyTimer == 3)
+        enemyTimer += Time.deltaTime;
+        if (enemyTimer >= 5)
         {
             Instantiate(enemyPrefab1, enemyPos1, Quaternion.identity);
             Instantiate(enemyPrefab1, enemyPos2, Quaternion.identity);

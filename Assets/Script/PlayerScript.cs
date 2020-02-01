@@ -65,7 +65,7 @@ public class PlayerScript : MonoBehaviour
         
 
         //Allows the player to shoot
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             //Facing North
             if (Direction == 1)
