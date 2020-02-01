@@ -20,12 +20,13 @@ public class EnemyScript : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
 
         movementSpeed = 2;
+        maxHealth = 10;
+        curHealth = 10;
     }
 
     void Update()
     {
-        //transform.LookAt(Player.transform);
-        //transform.position = Vector2.MoveTowards( transform.position, Target.position , movementSpeed*Time.deltaTime);
+        transform.position = Vector2.MoveTowards( transform.position, Target.position , movementSpeed*Time.deltaTime);
 
         curHealth = maxHealth;
 

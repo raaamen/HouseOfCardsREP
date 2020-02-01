@@ -9,10 +9,6 @@ public class PlayerScript : MonoBehaviour
 
 
     //Vectors
-    public Vector3 up;
-    public Vector3 down;
-    public Vector3 left;
-    public Vector3 right;
 
     //Ints
 
@@ -35,7 +31,7 @@ public class PlayerScript : MonoBehaviour
         curHP = maxHP;
         Direction = 3;
 
-
+        Direction = 3;
     }
 
 
@@ -46,22 +42,18 @@ public class PlayerScript : MonoBehaviour
         // Allows the player to use WASD for movement.
         if (Input.GetKey(KeyCode.W))
         {
-            GetComponent<Transform>().position += up;
             Direction = 1;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            GetComponent<Transform>().position += down;
             Direction = 4;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            GetComponent<Transform>().position += left;
             Direction = 2;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            GetComponent<Transform>().position += right;
             Direction = 3;
         }
  
@@ -70,7 +62,7 @@ public class PlayerScript : MonoBehaviour
         }
 
         //Allows the player to shoot
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             //Facing North
             if (Direction == 1)
