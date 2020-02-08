@@ -5,6 +5,8 @@ using UnityEngine;
 public class ThrowingCardScript : MonoBehaviour
 {
     public PlayerScript playerScript;
+    public EnemyScript enemyScript;
+
 
     public Vector3 up;
     /*public Vector3 down;
@@ -17,19 +19,15 @@ public class ThrowingCardScript : MonoBehaviour
     void Start()
     {
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
-
-        /*up.y = (1);
-        down.y = (-1);
-        left.x = (-1);
-        right.x = (1);*/
+        enemyScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
-
-        GetComponent<Transform>().position += up;
+        GetComponent<Rigidbody2D>().AddForce(up);
+        //GetComponent<Transform>().position += up;
         
         if (timer >= 1)
         {
@@ -40,8 +38,15 @@ public class ThrowingCardScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            enemyScript.curHealth -= 1;
             Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            
         }
     }
 }
