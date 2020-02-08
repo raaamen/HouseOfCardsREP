@@ -9,6 +9,8 @@ public class EnemyScript : MonoBehaviour
 
     //Floats
     public float movementSpeed;
+    private float dazedTime;
+    public float startDazedTime;
 
     //Ints
     public int curHealth;
@@ -22,7 +24,6 @@ public class EnemyScript : MonoBehaviour
         movementSpeed = 2;
 
         maxHealth = 10;
-        curHealth = 10;
 
 
         curHealth = maxHealth;
@@ -32,6 +33,15 @@ public class EnemyScript : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards( transform.position, Target.position , movementSpeed*Time.deltaTime);
 
+        if (dazedTime <= 0)
+        {
+            movementSpeed = 2;
+        }
+        else
+        {
+            movementSpeed = 0;
+            dazedTime -= Time.deltaTime;
+        }
 
 
         if (curHealth <= 0)
@@ -49,6 +59,7 @@ public class EnemyScript : MonoBehaviour
     public void TakeDamage(int damage)
     {
         curHealth -= damage;
+        dazedTime = startDazedTime;
 
     }
 }
