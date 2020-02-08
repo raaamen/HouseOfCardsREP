@@ -299,6 +299,18 @@ MonoBehaviour:
   - color: {r: 0, g: 0, b: 0, a: 1}
     prefab: {fileID: 1085173869689798480, guid: f2b667ee8cfe2e44dbe422e880961a66,
       type: 3}
+  - color: {r: 0, g: 0, b: 0, a: 1}
+    prefab: {fileID: 1085173869689798480, guid: f2b667ee8cfe2e44dbe422e880961a66,
+      type: 3}
+  - color: {r: 0, g: 0, b: 0, a: 1}
+    prefab: {fileID: 1085173869689798480, guid: f2b667ee8cfe2e44dbe422e880961a66,
+      type: 3}
+  - color: {r: 0, g: 0, b: 0, a: 1}
+    prefab: {fileID: 1085173869689798480, guid: f2b667ee8cfe2e44dbe422e880961a66,
+      type: 3}
+  - color: {r: 0, g: 0, b: 0, a: 1}
+    prefab: {fileID: 1085173869689798480, guid: f2b667ee8cfe2e44dbe422e880961a66,
+      type: 3}
 --- !u!4 &887530027
 Transform:
   m_ObjectHideFlags: 0
