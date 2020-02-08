@@ -9,6 +9,8 @@ public class EnemyScript : MonoBehaviour
 
     //Floats
     public float movementSpeed;
+    private float dazedTime;
+    public float startDazedTime;
 
     //Ints
     public int curHealth;
@@ -21,14 +23,25 @@ public class EnemyScript : MonoBehaviour
 
         movementSpeed = 2;
 
+        maxHealth = 10;
+
+
         curHealth = maxHealth;
     }
 
     void Update()
     {
-        //transform.LookAt(Player.transform);
-        //transform.position = Vector2.MoveTowards( transform.position, Target.position , movementSpeed*Time.deltaTime);
+        transform.position = Vector2.MoveTowards( transform.position, Target.position , movementSpeed*Time.deltaTime);
 
+        if (dazedTime <= 0)
+        {
+            movementSpeed = 2;
+        }
+        else
+        {
+            movementSpeed = 0;
+            dazedTime -= Time.deltaTime;
+        }
 
 
         if (curHealth <= 0)
@@ -40,12 +53,13 @@ public class EnemyScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            player.Damage(3);
+            player.Damage(5);
         }
     }
     public void TakeDamage(int damage)
     {
         curHealth -= damage;
-        Debug.Log("Damage Taken");
+        dazedTime = startDazedTime;
+
     }
 }

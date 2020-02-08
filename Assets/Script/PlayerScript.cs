@@ -9,10 +9,11 @@ public class PlayerScript : MonoBehaviour
 
 
     //Vectors
-    public Vector3 up;
-    public Vector3 down;
-    public Vector3 left;
-    public Vector3 right;
+
+    public Vector3 Offset1;
+    public Vector3 Offset2;
+    public Vector3 Offset3;
+    public Vector3 Offset4;
 
     //Ints
 
@@ -26,7 +27,12 @@ public class PlayerScript : MonoBehaviour
     public bool lookingRight = true;
 
     //Refrences
-    public GameObject throwingCard;
+    public GameObject throwingCard1;
+    public GameObject throwingCard2;
+    public GameObject throwingCard3;
+    public GameObject throwingCard4;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -35,37 +41,33 @@ public class PlayerScript : MonoBehaviour
         curHP = maxHP;
         Direction = 3;
 
-
+        Direction = 3;
     }
 
     void Update()
     {
-        /* Allows the player to use WASD for movement.
+        // Allows the player to use WASD for movement.
         if (Input.GetKey(KeyCode.W))
         {
-            GetComponent<Transform>().position += up;
             Direction = 1;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            GetComponent<Transform>().position += down;
             Direction = 4;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            GetComponent<Transform>().position += left;
             Direction = 2;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            GetComponent<Transform>().position += right;
             Direction = 3;
         }
  
         {
             lookingRight = true;
         }
-        */
+        
 
         //Allows the player to shoot
         if (Input.GetKeyDown(KeyCode.K))
@@ -73,22 +75,22 @@ public class PlayerScript : MonoBehaviour
             //Facing North
             if (Direction == 1)
             {
-                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
+                Instantiate(throwingCard1, GetComponent<Transform>().position + Offset1, Quaternion.identity);
             }
             //Facing South
             if (Direction == 2)
             {
-                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
+                Instantiate(throwingCard2, GetComponent<Transform>().position + Offset2, Quaternion.identity);
             }
             //Facing East
             if (Direction == 3)
             {
-                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
+                Instantiate(throwingCard3, GetComponent<Transform>().position + Offset3, Quaternion.identity);
             }
             //Facing West
             if (Direction == 4)
             {
-                Instantiate(throwingCard, GetComponent<Transform>().position, Quaternion.identity);
+                Instantiate(throwingCard4, GetComponent<Transform>().position + Offset4, Quaternion.identity);
             }
 
 
@@ -103,6 +105,14 @@ public class PlayerScript : MonoBehaviour
         {
             Die();
         }
+        if (curHP <= 50)
+        {
+            Debug.Log("You are Halfway from dying");
+        }
+        if (curHP <= 25)
+        {
+            Debug.Log("You are almost dead");
+        }
 
 
     }
@@ -113,6 +123,8 @@ public class PlayerScript : MonoBehaviour
     void Die()
     {
         //Restart
-        SceneManager.LoadScene("Testt");
+        Debug.Log("You Died!");
+        SceneManager.LoadScene("q");
+
     }
 }
