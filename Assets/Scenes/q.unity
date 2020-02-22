@@ -172,7 +172,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &87452064
+--- !u!1 &79713150
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 87452065}
+  - component: {fileID: 79713151}
   m_Layer: 0
   m_Name: AttackPos
   m_TagString: Untagged
@@ -188,19 +188,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &87452065
+--- !u!4 &79713151
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87452064}
+  m_GameObject: {fileID: 79713150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.322, y: -0.001, z: 0}
+  m_LocalPosition: {x: 0.42, y: -0.0009999991, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 403641219}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &403641214
 GameObject:
@@ -283,7 +283,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -349,8 +349,8 @@ Transform:
   m_LocalPosition: {x: -0.16971996, y: -0.2206359, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children:
-  - {fileID: 87452065}
   - {fileID: 1735577820}
+  - {fileID: 79713151}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -366,11 +366,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7358e7a30e7af4789b61326d5bd0fe4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 2
   startTimeBtwAttack: 0
-  attackRangeX: 0
-  attackRangeY: 0
-  attackPos: {fileID: 87452065}
+  attackRangeX: 1.06
+  attackRangeY: 1.09
+  attackPos: {fileID: 79713151}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256
@@ -1012,7 +1012,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 403641219}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1735577821
 MonoBehaviour:
