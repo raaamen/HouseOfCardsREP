@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-   /// public bool playerHere = false;
+    public bool playerHere = false;
 
     public Dialogue dialogue;
+
+    public void Update()
+    {
+        if (playerHere == true)
+        {
+            TriggerDialogue();
+        }
+    }
 
     public void TriggerDialogue()
     {
@@ -16,7 +24,11 @@ public class DialogueTrigger : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            playerHere = true;
+            Debug.Log("beep");
+        }
     }
 
 }
