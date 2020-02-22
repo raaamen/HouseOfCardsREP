@@ -51,6 +51,8 @@ public class PlayerMovement : MonoBehaviour
         {
             FlipX();
         }
+
+
         if (facingUp == false && movement.y > 0)
         {
             FlipY();
@@ -60,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
             FlipY();
         }
     }
+    //Flips the player on it's x-axis 
     void FlipX()
     {
         facingRight = !facingRight;
