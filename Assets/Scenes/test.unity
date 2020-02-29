@@ -387,6 +387,18 @@ MonoBehaviour:
       task is simple: defeat the enemies, reach the end goal, and claim your prize!
       I welcome you\u2026 to the House of Cards! Now then, let\u2019s get started,
       shall we?"
+    - "Pardon me, good fellow. I am the Rule Card! I exist to teach you the ways of
+      this place. You see, sir, you are a part of a very special game now. You opened
+      the special box of cards, and now you may enjoy the festivities with us! Your
+      task is simple: defeat the enemies, reach the end goal, and claim your prize!
+      I welcome you\u2026 to the House of Cards! Now then, let\u2019s get started,
+      shall we?"
+    - "Pardon me, good fellow. I am the Rule Card! I exist to teach you the ways of
+      this place. You see, sir, you are a part of a very special game now. You opened
+      the special box of cards, and now you may enjoy the festivities with us! Your
+      task is simple: defeat the enemies, reach the end goal, and claim your prize!
+      I welcome you\u2026 to the House of Cards! Now then, let\u2019s get started,
+      shall we?"
 --- !u!61 &488912455
 BoxCollider2D:
   m_ObjectHideFlags: 0
