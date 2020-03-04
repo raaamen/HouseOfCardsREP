@@ -51,16 +51,6 @@ public class PlayerMovement : MonoBehaviour
         {
             FlipX();
         }
-
-
-        if (facingUp == false && movement.y > 0)
-        {
-            FlipY();
-        }
-        else if (facingUp == true && movement.y < 0)
-        {
-            FlipY();
-        }
     }
     //Flips the player on it's x-axis 
     void FlipX()
@@ -70,12 +60,6 @@ public class PlayerMovement : MonoBehaviour
         Scaler.x *= -1;
         transform.localScale = Scaler;
     }
-    void FlipY()
-    {
-        facingUp = !facingUp;
-        Vector3 Scaler = transform.localScale;
-        Scaler.y *= -1;
-        transform.localScale = Scaler;
-    }
+
 
 }
