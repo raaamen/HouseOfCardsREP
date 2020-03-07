@@ -50,18 +50,22 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             Direction = 1;
+            transform.localRotation = Quaternion.Euler(0, 0, 90);
         }
         if (Input.GetKey(KeyCode.S))
         {
             Direction = 4;
+            transform.localRotation = Quaternion.Euler(0, 0, -90);
         }
         if (Input.GetKey(KeyCode.A))
         {
             Direction = 2;
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         if (Input.GetKey(KeyCode.D))
         {
             Direction = 3;
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
  
         {
