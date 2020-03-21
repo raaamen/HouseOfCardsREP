@@ -243,6 +243,7 @@ MonoBehaviour:
   curHP: 0
   maxHP: 100
   Direction: 0
+  startShootTime: 0
   lookingRight: 1
   throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
     type: 3}

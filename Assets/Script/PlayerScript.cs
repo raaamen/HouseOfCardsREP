@@ -15,13 +15,13 @@ public class PlayerScript : MonoBehaviour
     public Vector3 Offset4;
 
     //Ints
-    public int curHP;
-    public int maxHP = 100;
+    public int Health;
     public int Direction;
 
     //Floats
     private float shootCoolDown;
     public float startShootTime;
+
     //Booleans
     public bool lookingRight = true;
 
@@ -37,8 +37,6 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        curHP = maxHP;
         Direction = 3;
 
         startShootTime = 3;
@@ -63,6 +61,8 @@ public class PlayerScript : MonoBehaviour
             //transform.localRotation = Quaternion.Euler(0, 0, 0);
 
         }
+
+
         if (Input.GetKey(KeyCode.D))
         {
             Direction = 3;
@@ -72,10 +72,7 @@ public class PlayerScript : MonoBehaviour
         {
             lookingRight = true;
         }
-<<<<<<< HEAD
-        
-        if (shootCoolDown <= 0)
-=======
+
 
         if (Input.GetKeyDown(KeyCode.J))
         {
@@ -85,6 +82,8 @@ public class PlayerScript : MonoBehaviour
         {
             Anim.SetBool("Attacking", false);
         }
+
+
         if (Input.GetKeyDown(KeyCode.K))
         {
             Anim.SetBool("Throwing", true);
@@ -94,9 +93,9 @@ public class PlayerScript : MonoBehaviour
             Anim.SetBool("Throwing", false);
 
         }
-        //Allows the player to shoot
-        if (Input.GetKeyDown(KeyCode.K))
->>>>>>> b49b80bdec7bd7825e4678d25bb6a5843d88d4f4
+
+
+        if (shootCoolDown <= 0)
         {
             //Allows the player to shoot
             if (Input.GetKeyDown(KeyCode.K))
@@ -129,30 +128,13 @@ public class PlayerScript : MonoBehaviour
             {
                 shootCoolDown -= Time.deltaTime;
             }
-
-        }
-        if (curHP > maxHP)
-        {
-            curHP = maxHP;
-        }
-        if (curHP <= 0)
-        {
-            Die();
-        }
-        if (curHP <= 50)
-        {
-            Debug.Log("You are Halfway from dying");
-        }
-        if (curHP <= 25)
-        {
-            Debug.Log("You are almost dead");
         }
 
 
-    }
+        }
     public void Damage(int dmg)
     {
-        curHP -= dmg;
+        Health -= dmg;
     }
     void Die()
     {
