@@ -737,7 +737,7 @@ SpriteRenderer:
   m_Size: {x: 1.42, y: 1.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &203480011
@@ -1250,7 +1250,7 @@ SpriteRenderer:
   m_Size: {x: 0.9, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &398166204
@@ -1999,7 +1999,7 @@ SpriteRenderer:
   m_Size: {x: 0.9, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &888469568
@@ -2320,7 +2320,7 @@ SpriteRenderer:
   m_Size: {x: 0.9, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &975420106
@@ -2868,7 +2868,7 @@ SpriteRenderer:
   m_Size: {x: 1.42, y: 1.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1305358788
@@ -2980,6 +2980,7 @@ GameObject:
   - component: {fileID: 1356193773}
   - component: {fileID: 1356193772}
   - component: {fileID: 1356193778}
+  - component: {fileID: 1356193779}
   m_Layer: 0
   m_Name: PlayerStill
   m_TagString: Player
@@ -3036,7 +3037,7 @@ MonoBehaviour:
     type: 3}
   throwingCard4: {fileID: 5652454831798775770, guid: ee15379b78b9cc54dbb9f6adfc2b3fe3,
     type: 3}
-  Anim: {fileID: 1356193778}
+  Anim: {fileID: 0}
 --- !u!114 &1356193774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3051,7 +3052,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 10
   RB: {fileID: 1356193772}
-  animator: {fileID: 1356193778}
 --- !u!114 &1356193775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3156,6 +3156,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1356193779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356193771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a240b4200199f40adf2ebe52c36b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Offset1: {x: 0, y: 0, z: 0}
+  Offset2: {x: 0, y: 0, z: 0}
+  Offset3: {x: 0, y: 0, z: 0}
+  Offset4: {x: 0, y: 0, z: 0}
+  curHP: 0
+  maxHP: 100
+  Direction: 0
+  lookingRight: 1
+  throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
+    type: 3}
+  throwingCard2: {fileID: 7655508523414071973, guid: 9e7bba993eaec934bbee1db25cf14f21,
+    type: 3}
+  throwingCard3: {fileID: 4365332314510089528, guid: df25fc0dff6658d40bb9823bc1cd6bcf,
+    type: 3}
+  throwingCard4: {fileID: 5652454831798775770, guid: ee15379b78b9cc54dbb9f6adfc2b3fe3,
+    type: 3}
+  Anim: {fileID: 1356193778}
 --- !u!1 &1425548342
 GameObject:
   m_ObjectHideFlags: 0
@@ -3266,7 +3295,7 @@ SpriteRenderer:
   m_Size: {x: 0.9, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1456368977
@@ -3853,7 +3882,7 @@ SpriteRenderer:
   m_Size: {x: 1.42, y: 1.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1957672630

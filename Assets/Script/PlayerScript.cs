@@ -32,6 +32,7 @@ public class PlayerScript : MonoBehaviour
     public GameObject throwingCard3;
     public GameObject throwingCard4;
 
+    public Animator Anim;
     
 
     // Start is called before the first frame update
@@ -50,29 +51,46 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             Direction = 1;
-            transform.localRotation = Quaternion.Euler(0, 0, 90);
+            //transform.localRotation = Quaternion.Euler(0, 0, 90);
         }
         if (Input.GetKey(KeyCode.S))
         {
             Direction = 4;
-            transform.localRotation = Quaternion.Euler(0, 0, -90);
+            //transform.localRotation = Quaternion.Euler(0, 0, -90);
         }
         if (Input.GetKey(KeyCode.A))
         {
             Direction = 2;
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
+            //transform.localRotation = Quaternion.Euler(0, 0, 0);
+
         }
         if (Input.GetKey(KeyCode.D))
         {
             Direction = 3;
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
+            //transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
  
         {
             lookingRight = true;
         }
-        
 
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            Anim.SetBool("Attacking", true);
+        }
+        else
+        {
+            Anim.SetBool("Attacking", false);
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Anim.SetBool("Throwing", true);
+        }
+        else
+        {
+            Anim.SetBool("Throwing", false);
+
+        }
         //Allows the player to shoot
         if (Input.GetKeyDown(KeyCode.K))
         {
