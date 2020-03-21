@@ -9,20 +9,19 @@ public class PlayerScript : MonoBehaviour
 
 
     //Vectors
-
     public Vector3 Offset1;
     public Vector3 Offset2;
     public Vector3 Offset3;
     public Vector3 Offset4;
 
     //Ints
-
     public int curHP;
     public int maxHP = 100;
     public int Direction;
 
     //Floats
-
+    private float shootCoolDown;
+    public float startShootTime;
     //Booleans
     public bool lookingRight = true;
 
@@ -41,7 +40,7 @@ public class PlayerScript : MonoBehaviour
         curHP = maxHP;
         Direction = 3;
 
-        Direction = 3;
+        startShootTime = 3;
     }
 
     void Update()
@@ -72,33 +71,39 @@ public class PlayerScript : MonoBehaviour
             lookingRight = true;
         }
         
-
-        //Allows the player to shoot
-        if (Input.GetKeyDown(KeyCode.K))
+        if (shootCoolDown <= 0)
         {
-            //Facing North
-            if (Direction == 1)
+            //Allows the player to shoot
+            if (Input.GetKeyDown(KeyCode.K))
             {
-                Instantiate(throwingCard1, GetComponent<Transform>().position + Offset1, Quaternion.identity);
-            }
-            //Facing South
-            if (Direction == 2)
-            {
-                Instantiate(throwingCard2, GetComponent<Transform>().position + Offset2, Quaternion.identity);
-            }
-            //Facing East
-            if (Direction == 3)
-            {
-                Instantiate(throwingCard3, GetComponent<Transform>().position + Offset3, Quaternion.identity);
-            }
-            //Facing West
-            if (Direction == 4)
-            {
-                Instantiate(throwingCard4, GetComponent<Transform>().position + Offset4, Quaternion.identity);
-            }
+                //Facing North
+                if (Direction == 1)
+                {
+                    Instantiate(throwingCard1, GetComponent<Transform>().position + Offset1, Quaternion.identity);
+                }
+                //Facing South
+                if (Direction == 2)
+                {
+                    Instantiate(throwingCard2, GetComponent<Transform>().position + Offset2, Quaternion.identity);
+                }
+                //Facing East
+                if (Direction == 3)
+                {
+                    Instantiate(throwingCard3, GetComponent<Transform>().position + Offset3, Quaternion.identity);
+                }
+                //Facing West
+                if (Direction == 4)
+                {
+                    Instantiate(throwingCard4, GetComponent<Transform>().position + Offset4, Quaternion.identity);
+                }
 
 
-
+                shootCoolDown = startShootTime;
+            }
+            else
+            {
+                shootCoolDown -= Time.deltaTime;
+            }
 
         }
         if (curHP > maxHP)
