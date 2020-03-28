@@ -19,9 +19,8 @@ public class PlayerScript : MonoBehaviour
     public int Direction;
 
     //Floats
-    private float shootCoolDown;
-    public float startShootTime;
-
+    public float shootCoolDown;
+    public float meleeCoolDown;
     //Booleans
     public bool lookingRight = true;
 
@@ -38,12 +37,15 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         Direction = 3;
-
-        startShootTime = 3;
+        shootCoolDown = 2f;
     }
 
     void Update()
     {
+        shootCoolDown += Time.deltaTime;
+        meleeCoolDown += Time.deltaTime;
+
+
         // Allows the player to use WASD for movement.
         if (Input.GetKey(KeyCode.W))
         {
@@ -61,77 +63,65 @@ public class PlayerScript : MonoBehaviour
             //transform.localRotation = Quaternion.Euler(0, 0, 0);
 
         }
-
-
         if (Input.GetKey(KeyCode.D))
         {
             Direction = 3;
             //transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
  
-        {
+        /*{
             lookingRight = true;
-        }
+        }*/
 
 
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.J) && meleeCoolDown >= 2)
         {
             Anim.SetBool("Attacking", true);
-        }
-        else
+            meleeCoolDown = 0;
+        }else
         {
             Anim.SetBool("Attacking", false);
         }
 
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K) && shootCoolDown >= 2)
         {
             Anim.SetBool("Throwing", true);
-        }
-        else
+        }else
         {
             Anim.SetBool("Throwing", false);
-
         }
 
 
-        if (shootCoolDown <= 0)
+        //Allows the player to shoot
+        if (Input.GetKey(KeyCode.K) && shootCoolDown >= 2)
         {
-            //Allows the player to shoot
-            if (Input.GetKeyDown(KeyCode.K))
+            //Facing North
+            if (Direction == 1)
             {
-                //Facing North
-                if (Direction == 1)
-                {
-                    Instantiate(throwingCard1, GetComponent<Transform>().position + Offset1, Quaternion.identity);
-                }
-                //Facing South
-                if (Direction == 2)
-                {
-                    Instantiate(throwingCard2, GetComponent<Transform>().position + Offset2, Quaternion.identity);
-                }
-                //Facing East
-                if (Direction == 3)
-                {
-                    Instantiate(throwingCard3, GetComponent<Transform>().position + Offset3, Quaternion.identity);
-                }
-                //Facing West
-                if (Direction == 4)
-                {
-                    Instantiate(throwingCard4, GetComponent<Transform>().position + Offset4, Quaternion.identity);
-                }
-
-
-                shootCoolDown = startShootTime;
+                Instantiate(throwingCard1, GetComponent<Transform>().position + Offset1, Quaternion.identity);
             }
-            else
+            //Facing South
+            if (Direction == 2)
             {
-                shootCoolDown -= Time.deltaTime;
+                Instantiate(throwingCard2, GetComponent<Transform>().position + Offset2, Quaternion.identity);
             }
+            //Facing East
+            if (Direction == 3)
+            {
+                Instantiate(throwingCard3, GetComponent<Transform>().position + Offset3, Quaternion.identity);
+            }
+            //Facing West
+            if (Direction == 4)
+            {
+                Instantiate(throwingCard4, GetComponent<Transform>().position + Offset4, Quaternion.identity);
+            }
+                shootCoolDown = 0;
         }
+        
 
 
-        }
+    }
     public void Damage(int dmg)
     {
         Health -= dmg;
