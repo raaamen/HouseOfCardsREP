@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private bool facingRight = true;
     private bool facingUp = true;
 
+    public bool attacking;
+
     public Rigidbody2D RB;
     //private Rigidbody2D rb;
 
@@ -20,22 +22,34 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         //rb = GetComponent<Rigidbody2D>();
+        attacking = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         // This Is The Input For The Movement
+        
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+        
+        if (Input.GetKey(KeyCode.J) || Input.GetKey(KeyCode.K))
+        {
+            attacking = true;
+        }else
+        {
+            attacking = false;
+        }
     }
     private void FixedUpdate()
     {
 
         //This Is The Movement
-
-        RB.MovePosition(RB.position + movement * MoveSpeed * Time.fixedDeltaTime);
-
+        if (attacking == false)
+        {
+            RB.MovePosition(RB.position + movement * MoveSpeed * Time.fixedDeltaTime);
+        }
         /*
         moveX = Input.GetAxis("Horizontal");
         moveY = Input.GetAxis("Vertical");

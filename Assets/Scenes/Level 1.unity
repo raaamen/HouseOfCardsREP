@@ -3039,7 +3039,6 @@ GameObject:
   - component: {fileID: 1356193776}
   - component: {fileID: 1356193775}
   - component: {fileID: 1356193774}
-  - component: {fileID: 1356193773}
   - component: {fileID: 1356193772}
   - component: {fileID: 1356193778}
   - component: {fileID: 1356193779}
@@ -3071,35 +3070,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1356193773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356193771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a240b4200199f40adf2ebe52c36b30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Offset1: {x: 0, y: 0, z: 0}
-  Offset2: {x: 0, y: 0, z: 0}
-  Offset3: {x: 0, y: 0, z: 0}
-  Offset4: {x: 0, y: 0, z: 0}
-  Health: 0
-  Direction: 0
-  startShootTime: 0
-  lookingRight: 1
-  throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
-    type: 3}
-  throwingCard2: {fileID: 7655508523414071973, guid: 9e7bba993eaec934bbee1db25cf14f21,
-    type: 3}
-  throwingCard3: {fileID: 4365332314510089528, guid: df25fc0dff6658d40bb9823bc1cd6bcf,
-    type: 3}
-  throwingCard4: {fileID: 5652454831798775770, guid: ee15379b78b9cc54dbb9f6adfc2b3fe3,
-    type: 3}
-  Anim: {fileID: 0}
 --- !u!114 &1356193774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3113,6 +3083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 10
+  attacking: 0
   RB: {fileID: 1356193772}
 --- !u!114 &1356193775
 MonoBehaviour:
@@ -3191,7 +3162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356193771}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36, y: 2.2, z: -13.1}
+  m_LocalPosition: {x: -25.4, y: 2.2, z: -13.1}
   m_LocalScale: {x: 9, y: 9, z: 7.7947}
   m_Children:
   - {fileID: 459172334}
