@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float MoveSpeed = 10f;
+    public Animator anim1;
+
+    public float MoveSpeed = 20 0f;
     //public float speed;
     private float moveX;
     private float moveY;
@@ -33,7 +35,11 @@ public class PlayerMovement : MonoBehaviour
         
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        
+
+        anim1.SetFloat("Speed", Mathf.Abs(movement.x));
+        anim1.SetFloat("SpeedUp", Mathf.Abs(movement.y));
+
+
         if (Input.GetKey(KeyCode.J) || Input.GetKey(KeyCode.K))
         {
             attacking = true;
@@ -49,13 +55,7 @@ public class PlayerMovement : MonoBehaviour
         if (attacking == false)
         {
             RB.MovePosition(RB.position + movement * MoveSpeed * Time.fixedDeltaTime);
-        }
-        /*
-        moveX = Input.GetAxis("Horizontal");
-        moveY = Input.GetAxis("Vertical");
-        Debug.Log(moveX + moveY);
-        rb.velocity = new Vector3(moveX, moveY * speed, rb.velocity.y);
-        */       
+        }       
 
         if (facingRight == false && movement.x > 0)
         {

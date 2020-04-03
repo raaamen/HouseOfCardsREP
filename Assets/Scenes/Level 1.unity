@@ -3082,6 +3082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038774b3d2062444092262231154693f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim1: {fileID: 1356193778}
   MoveSpeed: 10
   attacking: 0
   RB: {fileID: 1356193772}
@@ -3207,7 +3208,8 @@ MonoBehaviour:
   Offset4: {x: 0, y: 0, z: 0}
   Health: 0
   Direction: 0
-  startShootTime: 0
+  shootCoolDown: 0
+  meleeCoolDown: 0
   lookingRight: 1
   throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
     type: 3}
