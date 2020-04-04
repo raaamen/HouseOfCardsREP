@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float MoveSpeed = 10f;
+    public Animator anim1;
+
+    public float MoveSpeed = 20f;
     //public float speed;
     private float moveX;
     private float moveY;
@@ -16,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D RB;
     //private Rigidbody2D rb;
+    public Animator animator;
 
     Vector2 movement;
 
@@ -29,11 +32,18 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("Speed", Mathf.Abs(movement.x));
+        animator.SetFloat("SpeedUp", Mathf.Abs(movement.y));
+
         // This Is The Input For The Movement
         
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        
+
+        anim1.SetFloat("Speed", Mathf.Abs(movement.x));
+        anim1.SetFloat("SpeedUp", Mathf.Abs(movement.y));
+
+
         if (Input.GetKey(KeyCode.J) || Input.GetKey(KeyCode.K))
         {
             attacking = true;
@@ -49,13 +59,7 @@ public class PlayerMovement : MonoBehaviour
         if (attacking == false)
         {
             RB.MovePosition(RB.position + movement * MoveSpeed * Time.fixedDeltaTime);
-        }
-        /*
-        moveX = Input.GetAxis("Horizontal");
-        moveY = Input.GetAxis("Vertical");
-        Debug.Log(moveX + moveY);
-        rb.velocity = new Vector3(moveX, moveY * speed, rb.velocity.y);
-        */       
+        }       
 
         if (facingRight == false && movement.x > 0)
         {
