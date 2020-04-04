@@ -3025,9 +3025,9 @@ MonoBehaviour:
   Offset2: {x: 0, y: 0, z: 0}
   Offset3: {x: 0, y: 0, z: 0}
   Offset4: {x: 0, y: 0, z: 0}
-  curHP: 0
-  maxHP: 100
+  Health: 0
   Direction: 0
+  startShootTime: 0
   lookingRight: 1
   throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
     type: 3}
@@ -3052,6 +3052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 10
   RB: {fileID: 1356193772}
+  animator: {fileID: 1356193778}
 --- !u!114 &1356193775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3172,9 +3173,9 @@ MonoBehaviour:
   Offset2: {x: 0, y: 0, z: 0}
   Offset3: {x: 0, y: 0, z: 0}
   Offset4: {x: 0, y: 0, z: 0}
-  curHP: 0
-  maxHP: 100
+  Health: 0
   Direction: 0
+  startShootTime: 0
   lookingRight: 1
   throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
     type: 3}

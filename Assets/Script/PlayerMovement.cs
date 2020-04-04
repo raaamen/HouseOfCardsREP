@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D RB;
     //private Rigidbody2D rb;
+    public Animator animator;
 
     Vector2 movement;
 
@@ -25,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("Speed", Mathf.Abs(movement.x));
+        animator.SetFloat("SpeedUp", Mathf.Abs(movement.y));
+
         // This Is The Input For The Movement
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
