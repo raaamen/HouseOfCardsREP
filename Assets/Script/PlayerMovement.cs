@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float MoveSpeed = 10f;
+    public Animator anim1;
+
+    public float MoveSpeed = 20 0f;
     //public float speed;
     private float moveX;
     private float moveY;
 
     private bool facingRight = true;
     private bool facingUp = true;
+
+    public bool attacking;
 
     public Rigidbody2D RB;
     //private Rigidbody2D rb;
@@ -21,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         //rb = GetComponent<Rigidbody2D>();
+        attacking = false;
+
     }
 
     // Update is called once per frame
@@ -30,22 +36,30 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("SpeedUp", Mathf.Abs(movement.y));
 
         // This Is The Input For The Movement
+        
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        anim1.SetFloat("Speed", Mathf.Abs(movement.x));
+        anim1.SetFloat("SpeedUp", Mathf.Abs(movement.y));
+
+
+        if (Input.GetKey(KeyCode.J) || Input.GetKey(KeyCode.K))
+        {
+            attacking = true;
+        }else
+        {
+            attacking = false;
+        }
     }
     private void FixedUpdate()
     {
 
         //This Is The Movement
-
-        RB.MovePosition(RB.position + movement * MoveSpeed * Time.fixedDeltaTime);
-
-        /*
-        moveX = Input.GetAxis("Horizontal");
-        moveY = Input.GetAxis("Vertical");
-        Debug.Log(moveX + moveY);
-        rb.velocity = new Vector3(moveX, moveY * speed, rb.velocity.y);
-        */       
+        if (attacking == false)
+        {
+            RB.MovePosition(RB.position + movement * MoveSpeed * Time.fixedDeltaTime);
+        }       
 
         if (facingRight == false && movement.x > 0)
         {
