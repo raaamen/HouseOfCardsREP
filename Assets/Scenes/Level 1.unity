@@ -6061,7 +6061,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356193771}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36a240b4200199f40adf2ebe52c36b30, type: 3}
   m_Name: 
@@ -6072,7 +6072,8 @@ MonoBehaviour:
   Offset4: {x: 0, y: 0, z: 0}
   Health: 0
   Direction: 0
-  startShootTime: 0
+  shootCoolDown: 0
+  meleeCoolDown: 0
   lookingRight: 1
   throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
     type: 3}
@@ -6095,8 +6096,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038774b3d2062444092262231154693f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim1: {fileID: 1356193778}
   MoveSpeed: 10
+  attacking: 0
   RB: {fileID: 1356193772}
+  animator: {fileID: 1356193778}
 --- !u!114 &1356193775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6213,13 +6217,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a240b4200199f40adf2ebe52c36b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Offset1: {x: 0, y: 0, z: 0}
-  Offset2: {x: 0, y: 0, z: 0}
-  Offset3: {x: 0, y: 0, z: 0}
-  Offset4: {x: 0, y: 0, z: 0}
+  Offset1: {x: 0, y: 1, z: 0}
+  Offset2: {x: 1, y: 0, z: 0}
+  Offset3: {x: 1, y: 0, z: 0}
+  Offset4: {x: 0, y: 1, z: 0}
   Health: 0
   Direction: 0
-  startShootTime: 0
+  shootCoolDown: 0
+  meleeCoolDown: 0
   lookingRight: 1
   throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
     type: 3}

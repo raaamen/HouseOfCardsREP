@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScript: {fileID: 0}
   enemyScript: {fileID: 0}
-  up: {x: -0.1, y: 0, z: 0}
+  up: {x: -0.5, y: 0, z: 0}
   timer: 0
 --- !u!61 &2664735091176871033
 BoxCollider2D:
