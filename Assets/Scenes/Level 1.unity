@@ -6021,6 +6021,7 @@ GameObject:
   - component: {fileID: 1356193776}
   - component: {fileID: 1356193775}
   - component: {fileID: 1356193774}
+  - component: {fileID: 1356193773}
   - component: {fileID: 1356193772}
   - component: {fileID: 1356193778}
   - component: {fileID: 1356193779}
@@ -6053,6 +6054,36 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1356193773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356193771}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a240b4200199f40adf2ebe52c36b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Offset1: {x: 0, y: 0, z: 0}
+  Offset2: {x: 0, y: 0, z: 0}
+  Offset3: {x: 0, y: 0, z: 0}
+  Offset4: {x: 0, y: 0, z: 0}
+  Health: 0
+  Direction: 0
+  shootCoolDown: 0
+  meleeCoolDown: 0
+  lookingRight: 1
+  throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
+    type: 3}
+  throwingCard2: {fileID: 7655508523414071973, guid: 9e7bba993eaec934bbee1db25cf14f21,
+    type: 3}
+  throwingCard3: {fileID: 4365332314510089528, guid: df25fc0dff6658d40bb9823bc1cd6bcf,
+    type: 3}
+  throwingCard4: {fileID: 5652454831798775770, guid: ee15379b78b9cc54dbb9f6adfc2b3fe3,
+    type: 3}
+  Anim: {fileID: 0}
 --- !u!114 &1356193774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6065,7 +6096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038774b3d2062444092262231154693f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim1: {fileID: 0}
+  anim1: {fileID: 1356193778}
   MoveSpeed: 10
   attacking: 0
   RB: {fileID: 1356193772}
@@ -6186,10 +6217,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a240b4200199f40adf2ebe52c36b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Offset1: {x: 0, y: 0, z: 0}
-  Offset2: {x: 0, y: 0, z: 0}
-  Offset3: {x: 0, y: 0, z: 0}
-  Offset4: {x: 0, y: 0, z: 0}
+  Offset1: {x: 0, y: 1, z: 0}
+  Offset2: {x: 1, y: 0, z: 0}
+  Offset3: {x: 1, y: 0, z: 0}
+  Offset4: {x: 0, y: 1, z: 0}
   Health: 0
   Direction: 0
   shootCoolDown: 0

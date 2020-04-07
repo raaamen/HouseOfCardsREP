@@ -104,7 +104,7 @@ public class PlayerScript : MonoBehaviour
             //Facing South
             if (Direction == 2)
             {
-                Instantiate(throwingCard2, GetComponent<Transform>().position + Offset2, Quaternion.identity);
+                Instantiate(throwingCard2, GetComponent<Transform>().position - Offset2, Quaternion.identity);
             }
             //Facing East
             if (Direction == 3)
@@ -114,7 +114,7 @@ public class PlayerScript : MonoBehaviour
             //Facing West
             if (Direction == 4)
             {
-                Instantiate(throwingCard4, GetComponent<Transform>().position + Offset4, Quaternion.identity);
+                Instantiate(throwingCard4, GetComponent<Transform>().position - Offset4, Quaternion.identity);
             }
                 shootCoolDown = 0;
         }
