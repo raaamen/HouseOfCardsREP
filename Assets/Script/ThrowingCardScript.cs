@@ -9,9 +9,6 @@ public class ThrowingCardScript : MonoBehaviour
 
 
     public Vector3 up;
-    /*public Vector3 down;
-    public Vector3 left;
-    public Vector3 right;*/
 
     public float timer;
 
@@ -27,7 +24,6 @@ public class ThrowingCardScript : MonoBehaviour
     {
         timer += Time.deltaTime;
         GetComponent<Rigidbody2D>().AddForce(up);
-        //GetComponent<Transform>().position += up;
         
         if (timer >= 1)
         {
