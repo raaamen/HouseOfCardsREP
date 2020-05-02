@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 6381318}
   m_Layer: 0
   m_Name: Wall (12)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 33492668}
   m_Layer: 0
   m_Name: BLOCK_2 (2)
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 62227105}
   m_Layer: 0
   m_Name: Wall_Pillar (18)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 91831069}
   m_Layer: 0
   m_Name: house_F
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 119144043}
   m_Layer: 0
   m_Name: Walls(Main)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -794,7 +794,7 @@ GameObject:
   - component: {fileID: 135460336}
   m_Layer: 0
   m_Name: Wall_Pillar (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -901,7 +901,7 @@ GameObject:
   - component: {fileID: 150060421}
   m_Layer: 0
   m_Name: Wall corner (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 159365429}
   m_Layer: 0
   m_Name: Wall corner
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1147,7 +1147,7 @@ GameObject:
   - component: {fileID: 186921430}
   m_Layer: 0
   m_Name: house_F (3)
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1252,7 +1252,7 @@ GameObject:
   - component: {fileID: 195581405}
   m_Layer: 0
   m_Name: Houses + Snow(Top)
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1293,7 +1293,7 @@ GameObject:
   - component: {fileID: 217934821}
   m_Layer: 0
   m_Name: Wall_side (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1557,7 +1557,7 @@ GameObject:
   - component: {fileID: 261434139}
   m_Layer: 0
   m_Name: Houses(Bottom)
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1591,7 +1591,7 @@ GameObject:
   - component: {fileID: 272989778}
   m_Layer: 0
   m_Name: Wall_Sides(Left)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1740,7 +1740,7 @@ GameObject:
   - component: {fileID: 312202057}
   m_Layer: 0
   m_Name: Wall_Pillar (8)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1847,7 +1847,7 @@ GameObject:
   - component: {fileID: 316844312}
   m_Layer: 0
   m_Name: Wall_Pillar (20)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1954,7 +1954,7 @@ GameObject:
   - component: {fileID: 341615418}
   m_Layer: 0
   m_Name: Wall (14)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2061,7 +2061,7 @@ GameObject:
   - component: {fileID: 352086169}
   m_Layer: 0
   m_Name: Wall_Pillar (10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2168,7 +2168,7 @@ GameObject:
   - component: {fileID: 353990843}
   m_Layer: 0
   m_Name: Wall_Pillar (17)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2489,7 +2489,7 @@ GameObject:
   - component: {fileID: 397652582}
   m_Layer: 0
   m_Name: Wall (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2596,7 +2596,7 @@ GameObject:
   - component: {fileID: 397856254}
   m_Layer: 0
   m_Name: Wall_Pillar (12)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2703,7 +2703,7 @@ GameObject:
   - component: {fileID: 398166205}
   m_Layer: 0
   m_Name: House (2)
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2808,7 +2808,7 @@ GameObject:
   - component: {fileID: 414033991}
   m_Layer: 0
   m_Name: Walls(Bottom)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3121,7 +3121,7 @@ GameObject:
   - component: {fileID: 537306294}
   m_Layer: 0
   m_Name: Wall_Pillar (7)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3229,7 +3229,7 @@ GameObject:
   - component: {fileID: 555719560}
   m_Layer: 0
   m_Name: Wall_side (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3484,7 +3484,7 @@ GameObject:
   - component: {fileID: 585673541}
   m_Layer: 0
   m_Name: Side area(T)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3631,7 +3631,7 @@ GameObject:
   - component: {fileID: 669985475}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3738,7 +3738,7 @@ GameObject:
   - component: {fileID: 671943471}
   m_Layer: 0
   m_Name: Wall_Pillar (13)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3952,7 +3952,7 @@ GameObject:
   - component: {fileID: 730456134}
   m_Layer: 0
   m_Name: Wall_Pillar (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4188,7 +4188,7 @@ GameObject:
   - component: {fileID: 740481161}
   m_Layer: 0
   m_Name: Wall_Pillar (6)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4295,7 +4295,7 @@ GameObject:
   - component: {fileID: 750269793}
   m_Layer: 0
   m_Name: Wall_Pillar (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4402,7 +4402,7 @@ GameObject:
   - component: {fileID: 755579269}
   m_Layer: 0
   m_Name: Wall_Pillar (19)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4509,7 +4509,7 @@ GameObject:
   - component: {fileID: 759415261}
   m_Layer: 0
   m_Name: Wall_Pillar (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4697,7 +4697,7 @@ GameObject:
   - component: {fileID: 809669965}
   m_Layer: 0
   m_Name: Side area(L)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4741,7 +4741,7 @@ GameObject:
   - component: {fileID: 851898706}
   m_Layer: 0
   m_Name: Wall_side (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5213,7 +5213,7 @@ GameObject:
   - component: {fileID: 876592054}
   m_Layer: 0
   m_Name: Wall_side (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5448,7 +5448,7 @@ GameObject:
   - component: {fileID: 888469569}
   m_Layer: 0
   m_Name: House
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5556,7 +5556,7 @@ GameObject:
   - component: {fileID: 913242929}
   m_Layer: 0
   m_Name: Wall_side (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5684,7 +5684,7 @@ GameObject:
   - component: {fileID: 920630014}
   m_Layer: 0
   m_Name: Wall (11)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5898,7 +5898,7 @@ GameObject:
   - component: {fileID: 939559918}
   m_Layer: 0
   m_Name: Wall_Pillar
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6005,7 +6005,7 @@ GameObject:
   - component: {fileID: 939912376}
   m_Layer: 0
   m_Name: Wall (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6112,7 +6112,7 @@ GameObject:
   - component: {fileID: 958033443}
   m_Layer: 0
   m_Name: Wall (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6220,7 +6220,7 @@ GameObject:
   - component: {fileID: 962098288}
   m_Layer: 0
   m_Name: Wall_side (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6348,7 +6348,7 @@ GameObject:
   - component: {fileID: 975420107}
   m_Layer: 0
   m_Name: House (3)
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6455,7 +6455,7 @@ GameObject:
   - component: {fileID: 1022783326}
   m_Layer: 0
   m_Name: Wall (8)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6564,7 +6564,7 @@ GameObject:
   - component: {fileID: 1025477596}
   m_Layer: 0
   m_Name: Wall_side (10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6819,7 +6819,7 @@ GameObject:
   - component: {fileID: 1056280760}
   m_Layer: 0
   m_Name: Side Area
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6854,7 +6854,7 @@ GameObject:
   - component: {fileID: 1086392469}
   m_Layer: 0
   m_Name: Wall (6)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7319,7 +7319,7 @@ GameObject:
   - component: {fileID: 1194704175}
   m_Layer: 0
   m_Name: house_F (1)
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7662,7 +7662,7 @@ GameObject:
   - component: {fileID: 1291485542}
   m_Layer: 0
   m_Name: Wall_Pillar (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7769,7 +7769,7 @@ GameObject:
   - component: {fileID: 1292145979}
   m_Layer: 0
   m_Name: Wall (13)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7877,7 +7877,7 @@ GameObject:
   - component: {fileID: 1326787299}
   m_Layer: 0
   m_Name: Wall_side (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8004,7 +8004,7 @@ GameObject:
   - component: {fileID: 1331511511}
   m_Layer: 0
   m_Name: BLOCK_2
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8086,7 +8086,7 @@ GameObject:
   - component: {fileID: 1331984452}
   m_Layer: 0
   m_Name: Wall_side (9)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8213,7 +8213,6 @@ GameObject:
   - component: {fileID: 1356193776}
   - component: {fileID: 1356193775}
   - component: {fileID: 1356193774}
-  - component: {fileID: 1356193773}
   - component: {fileID: 1356193772}
   - component: {fileID: 1356193778}
   - component: {fileID: 1356193779}
@@ -8246,36 +8245,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1356193773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356193771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a240b4200199f40adf2ebe52c36b30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Offset1: {x: 0, y: 0, z: 0}
-  Offset2: {x: 0, y: 0, z: 0}
-  Offset3: {x: 0, y: 0, z: 0}
-  Offset4: {x: 0, y: 0, z: 0}
-  Health: 0
-  Direction: 0
-  shootCoolDown: 0
-  meleeCoolDown: 0
-  lookingRight: 1
-  throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
-    type: 3}
-  throwingCard2: {fileID: 7655508523414071973, guid: 9e7bba993eaec934bbee1db25cf14f21,
-    type: 3}
-  throwingCard3: {fileID: 4365332314510089528, guid: df25fc0dff6658d40bb9823bc1cd6bcf,
-    type: 3}
-  throwingCard4: {fileID: 5652454831798775770, guid: ee15379b78b9cc54dbb9f6adfc2b3fe3,
-    type: 3}
-  Anim: {fileID: 0}
 --- !u!114 &1356193774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8409,10 +8378,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a240b4200199f40adf2ebe52c36b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Offset1: {x: 0, y: 0, z: 0}
-  Offset2: {x: 0, y: 0, z: 0}
-  Offset3: {x: 0, y: 0, z: 0}
-  Offset4: {x: 0, y: 0, z: 0}
+  Offset1: {x: 0, y: 1, z: 0}
+  Offset2: {x: 1, y: 0, z: 0}
+  Offset3: {x: 1, y: 0, z: 0}
+  Offset4: {x: 0, y: 2, z: 0}
   Health: 0
   Direction: 0
   shootCoolDown: 0
@@ -8467,7 +8436,7 @@ GameObject:
   - component: {fileID: 1387940302}
   m_Layer: 0
   m_Name: Wall_side (9)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8700,7 +8669,7 @@ GameObject:
   - component: {fileID: 1425548343}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8866,7 +8835,7 @@ GameObject:
   - component: {fileID: 1456368978}
   m_Layer: 0
   m_Name: House (1)
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8973,7 +8942,7 @@ GameObject:
   - component: {fileID: 1468016144}
   m_Layer: 0
   m_Name: Wall (10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9078,7 +9047,7 @@ GameObject:
   - component: {fileID: 1507192918}
   m_Layer: 0
   m_Name: 'Wall_Sides(Right) '
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9228,7 +9197,7 @@ GameObject:
   - component: {fileID: 1563743797}
   m_Layer: 0
   m_Name: Wall_side (6)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9355,7 +9324,7 @@ GameObject:
   - component: {fileID: 1566535862}
   m_Layer: 0
   m_Name: BLOCK_2 (3)
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9435,7 +9404,7 @@ GameObject:
   - component: {fileID: 1588774416}
   m_Layer: 0
   m_Name: BLOCK_2 (1)
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9517,7 +9486,7 @@ GameObject:
   - component: {fileID: 1635067704}
   m_Layer: 0
   m_Name: Wall_side (8)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9646,7 +9615,7 @@ GameObject:
   - component: {fileID: 1643354654}
   m_Layer: 0
   m_Name: Wall_side (10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9774,7 +9743,7 @@ GameObject:
   - component: {fileID: 1700870859}
   m_Layer: 0
   m_Name: Wall_Pillar (11)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9882,7 +9851,7 @@ GameObject:
   - component: {fileID: 1707035221}
   m_Layer: 0
   m_Name: Wall_side (8)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10246,7 +10215,7 @@ GameObject:
   - component: {fileID: 1761925874}
   m_Layer: 0
   m_Name: house_F (2)
-  m_TagString: Untagged
+  m_TagString: Houses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10482,7 +10451,7 @@ GameObject:
   - component: {fileID: 1766364639}
   m_Layer: 0
   m_Name: Wall_Pillar (14)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10590,7 +10559,7 @@ GameObject:
   - component: {fileID: 1801385780}
   m_Layer: 0
   m_Name: Wall_side (7)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10845,7 +10814,7 @@ GameObject:
   - component: {fileID: 1874954514}
   m_Layer: 0
   m_Name: Side area(R)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10886,7 +10855,7 @@ GameObject:
   - component: {fileID: 1945234338}
   m_Layer: 0
   m_Name: Wall (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10994,7 +10963,7 @@ GameObject:
   - component: {fileID: 1956662579}
   m_Layer: 0
   m_Name: Wall_side (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11123,7 +11092,7 @@ GameObject:
   - component: {fileID: 1963089877}
   m_Layer: 0
   m_Name: Wall_side (6)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11251,7 +11220,7 @@ GameObject:
   - component: {fileID: 1977008565}
   m_Layer: 0
   m_Name: Wall_Pillar (9)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11358,7 +11327,7 @@ GameObject:
   - component: {fileID: 1998216109}
   m_Layer: 0
   m_Name: Wall (9)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11466,7 +11435,7 @@ GameObject:
   - component: {fileID: 2009792686}
   m_Layer: 0
   m_Name: Wall_side (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11594,7 +11563,7 @@ GameObject:
   - component: {fileID: 2038302492}
   m_Layer: 0
   m_Name: Wall (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11702,7 +11671,7 @@ GameObject:
   - component: {fileID: 2047122564}
   m_Layer: 0
   m_Name: Wall_side (7)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11830,7 +11799,7 @@ GameObject:
   - component: {fileID: 2050072777}
   m_Layer: 0
   m_Name: Wall_Pillar (15)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11938,7 +11907,7 @@ GameObject:
   - component: {fileID: 2057466099}
   m_Layer: 0
   m_Name: Wall_side (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12409,7 +12378,7 @@ GameObject:
   - component: {fileID: 2135065166}
   m_Layer: 0
   m_Name: Wall_Pillar (16)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

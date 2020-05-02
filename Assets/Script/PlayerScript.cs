@@ -38,6 +38,13 @@ public class PlayerScript : MonoBehaviour
     {
         Direction = 3;
         shootCoolDown = 2f;
+
+        Offset1.y = 3;
+        Offset2.x = 3;
+        Offset3.x = 3;
+        Offset4.y = 3;
+
+
     }
 
     void Update()
@@ -74,7 +81,7 @@ public class PlayerScript : MonoBehaviour
         }*/
 
 
-        if (Input.GetKeyDown(KeyCode.J) && meleeCoolDown >= 2)
+        if (Input.GetKeyDown(KeyCode.J) && meleeCoolDown >= 1)
         {
             Anim.SetBool("Attacking", true);
             meleeCoolDown = 0;
@@ -84,7 +91,7 @@ public class PlayerScript : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.K) && shootCoolDown >= 2)
+        if (Input.GetKeyDown(KeyCode.K) && shootCoolDown >= 1)
         {
             Anim.SetBool("Throwing", true);
         }else
@@ -94,7 +101,7 @@ public class PlayerScript : MonoBehaviour
 
 
         //Allows the player to shoot
-        if (Input.GetKey(KeyCode.K) && shootCoolDown >= 2)
+        if (Input.GetKey(KeyCode.K) && shootCoolDown >= 1)
         {
             //Facing North
             if (Direction == 1)
