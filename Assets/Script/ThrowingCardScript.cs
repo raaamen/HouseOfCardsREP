@@ -35,14 +35,7 @@ public class ThrowingCardScript : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             enemyScript.curHealth -= 5;
-            Destroy(gameObject);
         }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            
-        }
+        Destroy(gameObject);
     }
 }
