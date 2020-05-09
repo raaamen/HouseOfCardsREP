@@ -10,6 +10,7 @@ TagManager:
   - Bullet
   - Wall
   - Houses
+  - Castle Intro Collider
   layers:
   - Default
   - TransparentFX
