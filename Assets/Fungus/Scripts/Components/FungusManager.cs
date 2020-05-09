@@ -19,9 +19,15 @@ namespace Fungus
     #endif
     public sealed class FungusManager : MonoBehaviour
     {
+<<<<<<< HEAD
+        volatile static FungusManager instance;  // The keyword "volatile" is friendly to the multi-thread.
+        static bool applicationIsQuitting = false;
+        readonly static object _lock = new object();  // The keyword "readonly" is friendly to the multi-thread.
+=======
         static FungusManager instance;
         static bool applicationIsQuitting = false;
         static object _lock = new object();
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 
         void Awake()
         {
@@ -96,6 +102,25 @@ namespace Fungus
                     return null;
                 }
 
+<<<<<<< HEAD
+                // Use "double checked locking" algorithm to implement the singleton for this "FungusManager" class, which can improve performance.
+                if (instance == null)
+                {
+                    lock (_lock)
+                    {
+                        if (instance == null)
+                        {
+                            var go = new GameObject();
+                            go.name = "FungusManager";
+                            DontDestroyOnLoad(go);
+                            instance = go.AddComponent<FungusManager>();
+                        }
+
+                    }
+                }
+                
+                return instance;
+=======
                 lock (_lock)
                 {
                     if (instance == null)
@@ -108,6 +133,7 @@ namespace Fungus
 
                     return instance;
                 }
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             }
         }
 

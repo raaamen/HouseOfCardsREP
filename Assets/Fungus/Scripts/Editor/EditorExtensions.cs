@@ -4,6 +4,10 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+<<<<<<< HEAD
+using UnityEditor;
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 
 namespace Fungus.EditorUtils
 {
@@ -52,7 +56,11 @@ namespace Fungus.EditorUtils
         }
 
         /// <summary>
+<<<<<<< HEAD
+        /// A convenient method for calling the above, but for ALL assemblies.
+=======
         /// A convenient method for calling the above.
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         /// Example usage:
         ///     List<System.Type> subTypes = EditorUtility.FindDerivedTypes(typeof(BaseTimelineEvent)).ToList();
         /// </summary>
@@ -61,7 +69,35 @@ namespace Fungus.EditorUtils
         /// <returns></returns>
         public static System.Type[] FindDerivedTypes(System.Type baseType, bool classOnly = true)
         {
+<<<<<<< HEAD
+#if UNITY_2019_2_OR_NEWER
+            var results = TypeCache.GetTypesDerivedFrom(baseType).ToArray();
+            if (classOnly)
+                return results.Where(x => x.IsClass).ToArray();
+            else
+                return results.ToArray();
+#else
+            System.Type[] typeArray = new System.Type[0];
+            var retval = typeArray.Concat(typeArray);
+            foreach (var assem in System.AppDomain.CurrentDomain.GetAssemblies())
+            {
+                retval = retval.Concat(FindDerivedTypesFromAssembly(assem, baseType, classOnly));
+            }
+            return retval.ToArray();
+#endif
+        }
+
+        /// <summary>
+        /// Find and return all Unity.Objects that have the target interface
+        /// </summary>
+        /// <typeparam name="T">Intended to be an interface but will work for any</typeparam>
+        /// <returns></returns>
+        public static List<T> FindObjectsOfInterface<T>()
+        {
+            return Object.FindObjectsOfType<Object>().OfType<T>().ToList();
+=======
             return FindDerivedTypesFromAssembly(System.Reflection.Assembly.GetAssembly(baseType), baseType, classOnly);
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         }
     }
 }

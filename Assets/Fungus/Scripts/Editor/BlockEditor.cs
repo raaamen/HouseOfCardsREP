@@ -8,8 +8,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+<<<<<<< HEAD
+=======
 using System.Text.RegularExpressions;
 using System.IO;
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 using System.Reflection;
 
 namespace Fungus.EditorUtils
@@ -33,6 +36,12 @@ namespace Fungus.EditorUtils
 
         private Rect lastEventPopupPos, lastCMDpopupPos;
 
+<<<<<<< HEAD
+        private string callersString;
+        private bool callersFoldout;
+
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
     
         protected virtual void OnEnable()
         {
@@ -56,6 +65,28 @@ namespace Fungus.EditorUtils
             commandListProperty = serializedObject.FindProperty("commandList");
 
             commandListAdaptor = new CommandListAdaptor(target as Block, commandListProperty);
+<<<<<<< HEAD
+        }
+
+        protected void CacheCallerString()
+        {
+            if (!string.IsNullOrEmpty(callersString))
+                return;
+
+            var targetBlock = target as Block;
+
+            var callers = FindObjectsOfType<MonoBehaviour>()
+                .Where(x => x is IBlockCaller)
+                .Select(x => x as IBlockCaller)
+                .Where(x => x.MayCallBlock(targetBlock))
+                .Select(x => x.GetLocationIdentifier()).ToArray();
+
+            if (callers != null && callers.Length > 0)
+                callersString = string.Join("\n", callers);
+            else
+                callersString = "None";
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 
         }
 
@@ -132,6 +163,24 @@ namespace Fungus.EditorUtils
 
                 SerializedProperty descriptionProp = serializedObject.FindProperty("description");
                 EditorGUILayout.PropertyField(descriptionProp);
+<<<<<<< HEAD
+
+
+                SerializedProperty suppressProp = serializedObject.FindProperty("suppressAllAutoSelections");
+                EditorGUILayout.PropertyField(suppressProp);
+                
+                EditorGUI.indentLevel++;
+                if (callersFoldout = EditorGUILayout.Foldout(callersFoldout, "Callers"))
+                {
+                    CacheCallerString();
+                    GUI.enabled = false;
+                    EditorGUILayout.TextArea(callersString);
+                    GUI.enabled = true;
+                }
+                EditorGUI.indentLevel--;
+                
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
                 EditorGUILayout.Space();
                 
                 DrawEventHandlerGUI(flowchart);
@@ -319,9 +368,21 @@ namespace Fungus.EditorUtils
             // Add Button
             if (GUILayout.Button(addIcon))
             {
+<<<<<<< HEAD
+                //this may be less reliable for HDPI scaling but previous method using editor window height is now returning 
+                //  null in 2019.2 suspect ongoing ui changes, so default to screen.height and then attempt to get the better result
+                int h = Screen.height;
+                if (EditorWindow.focusedWindow != null) h = (int)EditorWindow.focusedWindow.position.height;
+                else if (EditorWindow.mouseOverWindow != null) h = (int)EditorWindow.mouseOverWindow.position.height;
+
+                CommandSelectorPopupWindowContent.ShowCommandMenu(lastCMDpopupPos, "", target as Block,
+                    (int)(EditorGUIUtility.currentViewWidth),
+                    (int)(h - lastCMDpopupPos.y));
+=======
                 CommandSelectorPopupWindowContent.ShowCommandMenu(lastCMDpopupPos, "", target as Block,
                     (int)(EditorGUIUtility.currentViewWidth),
                     (int)(EditorWindow.focusedWindow.position.height - lastCMDpopupPos.y));
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             }
 
             // Duplicate Button
@@ -474,6 +535,8 @@ namespace Fungus.EditorUtils
             return result;
         }
 
+<<<<<<< HEAD
+=======
         [MenuItem("Tools/Fungus/Utilities/Export Reference Docs")]
         protected static void ExportReferenceDocs()
         {
@@ -655,6 +718,7 @@ namespace Fungus.EditorUtils
 
 
 
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         public virtual void ShowContextMenu()
         {
             var block = target as Block;
@@ -1040,5 +1104,52 @@ namespace Fungus.EditorUtils
 
             Repaint();
         }
+<<<<<<< HEAD
+
+
+
+        public static List<KeyValuePair<System.Type, CommandInfoAttribute>> GetFilteredCommandInfoAttribute(List<System.Type> menuTypes)
+        {
+            Dictionary<string, KeyValuePair<System.Type, CommandInfoAttribute>> filteredAttributes = new Dictionary<string, KeyValuePair<System.Type, CommandInfoAttribute>>();
+
+            foreach (System.Type type in menuTypes)
+            {
+                object[] attributes = type.GetCustomAttributes(false);
+                foreach (object obj in attributes)
+                {
+                    CommandInfoAttribute infoAttr = obj as CommandInfoAttribute;
+                    if (infoAttr != null)
+                    {
+                        string dictionaryName = string.Format("{0}/{1}", infoAttr.Category, infoAttr.CommandName);
+
+                        int existingItemPriority = -1;
+                        if (filteredAttributes.ContainsKey(dictionaryName))
+                        {
+                            existingItemPriority = filteredAttributes[dictionaryName].Value.Priority;
+                        }
+
+                        if (infoAttr.Priority > existingItemPriority)
+                        {
+                            KeyValuePair<System.Type, CommandInfoAttribute> keyValuePair = new KeyValuePair<System.Type, CommandInfoAttribute>(type, infoAttr);
+                            filteredAttributes[dictionaryName] = keyValuePair;
+                        }
+                    }
+                }
+            }
+            return filteredAttributes.Values.ToList<KeyValuePair<System.Type, CommandInfoAttribute>>();
+        }
+
+        // Compare delegate for sorting the list of command attributes
+        public static int CompareCommandAttributes(KeyValuePair<System.Type, CommandInfoAttribute> x, KeyValuePair<System.Type, CommandInfoAttribute> y)
+        {
+            int compare = (x.Value.Category.CompareTo(y.Value.Category));
+            if (compare == 0)
+            {
+                compare = (x.Value.CommandName.CompareTo(y.Value.CommandName));
+            }
+            return compare;
+        }
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
     }
 }

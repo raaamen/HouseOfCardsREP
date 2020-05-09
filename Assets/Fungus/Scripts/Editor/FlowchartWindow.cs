@@ -264,13 +264,37 @@ namespace Fungus.EditorUtils
 
             EditorApplication.update += OnEditorUpdate;
             Undo.undoRedoPerformed += Undo_ForceRepaint;
+<<<<<<< HEAD
+
+#if UNITY_2017_4_OR_NEWER
+            EditorApplication.playModeStateChanged += EditorApplication_playModeStateChanged;
+#endif
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         }
 
         protected virtual void OnDisable()
         {
             EditorApplication.update -= OnEditorUpdate;
             Undo.undoRedoPerformed -= Undo_ForceRepaint;
+<<<<<<< HEAD
+#if UNITY_2017_4_OR_NEWER
+            EditorApplication.playModeStateChanged -= EditorApplication_playModeStateChanged;
+#endif
         }
+
+#if UNITY_2017_4_OR_NEWER
+        private void EditorApplication_playModeStateChanged(PlayModeStateChange obj)
+        {
+            //force null so it can refresh context on the other side of the context
+            flowchart = null;
+            prevFlowchart = null;
+            blockInspector = null;
+        }
+#endif
+=======
+        }
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 
         protected void Undo_ForceRepaint()
         {
@@ -336,6 +360,10 @@ namespace Fungus.EditorUtils
             if (flowchart == null)
             {
                 blocks = new Block[0];
+<<<<<<< HEAD
+                filteredBlocks = new Block[0];
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             }
             else
             {
@@ -347,6 +375,11 @@ namespace Fungus.EditorUtils
 
         protected virtual void OnInspectorUpdate()
         {
+<<<<<<< HEAD
+            if (HandleFlowchartSelectionChange()) return;
+
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             // Ensure the Block Inspector is always showing the currently selected block
             var flowchart = GetFlowchart();
             if (flowchart == null || AnyNullBLocks())
@@ -450,6 +483,25 @@ namespace Fungus.EditorUtils
             {
                 filterStale = false;
                 //reset all
+<<<<<<< HEAD
+                for (int i = 0; filteredBlocks != null && i < filteredBlocks.Length; i++)
+                {
+                    if (filteredBlocks[i] != null)
+                    {
+                        filteredBlocks[i].IsFiltered = false;
+                    }
+                }
+
+                var nullCount = filteredBlocks.Count(x => x == null);
+                if (nullCount > 0 && nullCount != filteredBlocks.Length)
+                {
+                    Debug.LogWarning("Null block found in filteredBlocks. May be a symptom of an underlying issue");
+                }
+
+                //gather new
+                filteredBlocks = blocks.Where(block => IsBlockNameMatch(block) || IsCommandContentMatch(block)).ToArray();
+
+=======
                 foreach (var item in filteredBlocks)
                 {
                     item.IsFiltered = false;
@@ -458,6 +510,7 @@ namespace Fungus.EditorUtils
                 //gather new
                 filteredBlocks = blocks.Where(block => block.BlockName.ToLower().Contains(searchString.ToLower())).ToArray();
                 
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
                 //update filteredness
                 foreach (var item in filteredBlocks)
                 {
@@ -468,6 +521,19 @@ namespace Fungus.EditorUtils
             }
         }
 
+<<<<<<< HEAD
+        private bool IsBlockNameMatch(Block block)
+        {
+            return block.BlockName.IndexOf(searchString, StringComparison.OrdinalIgnoreCase) >= 0;
+        }
+
+        private bool IsCommandContentMatch(Block block)
+        {
+            return block.CommandList.Any(command => command.GetSearchableContent().IndexOf(searchString, StringComparison.OrdinalIgnoreCase) >= 0);            
+        }
+
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         protected virtual void HandleEarlyEvents(Event e) 
         {
             switch (e.type)
@@ -573,9 +639,22 @@ namespace Fungus.EditorUtils
         {
             mouseDownSelectionState.AddRange(flowchart.SelectedBlocks);
             flowchart.ClearSelectedBlocks();
+<<<<<<< HEAD
+            for (int i = 0; i < mouseDownSelectionState.Count; i++)
+            {
+                if (mouseDownSelectionState[i] != null)
+                {
+                    mouseDownSelectionState[i].IsControlSelected = true;
+                }
+                else
+                {
+                    Debug.LogWarning("Null block found in mouseDownSelectionState. May be a symptom of an underlying issue");
+                }
+=======
             foreach (var item in mouseDownSelectionState)
             {
                 item.IsControlSelected = true;
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             }
         }
 
@@ -633,7 +712,26 @@ namespace Fungus.EditorUtils
                 blockInspector = null;
                 prevFlowchart = flowchart;
                 executingBlocks.ClearAll();
+<<<<<<< HEAD
+
+                //attempt to defilter previous, if due to scene change these will be null
+                //  the regular filter updates will still occur within UpdateBlockCollection
+                for (int i = 0; i < filteredBlocks.Length; i++)
+                {
+                    if (filteredBlocks[i] != null)
+                    {
+                        filteredBlocks[i].IsFiltered = false;
+                    }
+                }
+
                 UpdateBlockCollection();
+
+                if(flowchart != null)
+                    flowchart.ReverseUpdateSelectedCache();//becomes reverse restore selected cache
+
+=======
+                UpdateBlockCollection();
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
                 Repaint();
                 return true;
             }
@@ -1186,6 +1284,24 @@ namespace Fungus.EditorUtils
                         menu.AddItem(new GUIContent ("Cut"), false, () => Cut());
                         menu.AddItem(new GUIContent ("Duplicate"), false, () => Duplicate());
                         menu.AddItem(new GUIContent ("Delete"), false, () => AddToDeleteList(blockList));
+<<<<<<< HEAD
+                        menu.AddSeparator("");
+                        if(Application.isPlaying)
+                        {
+                            menu.AddItem(new GUIContent("StopAll"), false, () => StopAllBlocks());
+                            menu.AddItem(new GUIContent("Stop"), false, () => StopThisBlock(hitBlock));
+                            menu.AddItem(new GUIContent("Execute"), false, () => ExecuteThisBlock(hitBlock, false));
+                            menu.AddItem(new GUIContent("Execute (Stop All First)"), false, () => ExecuteThisBlock(hitBlock, true));
+                        }
+                        else
+                        {
+                            menu.AddDisabledItem(new GUIContent("StopAll"));//, false), () => StopAllBlocks());
+                            menu.AddDisabledItem(new GUIContent("Stop"));//, false);, () => StopThisBlock(hitBlock));
+                            menu.AddDisabledItem(new GUIContent("Execute"));//, false);, () => ExecuteThisBlock(hitBlock, false));
+                            menu.AddDisabledItem(new GUIContent("Execute (Stop All First)"));//, false);, () => ExecuteThisBlock(hitBlock, true));
+                        }
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
                     }
                     else
                     {
@@ -1201,6 +1317,19 @@ namespace Fungus.EditorUtils
                         {
                             menu.AddDisabledItem(new GUIContent("Paste"));
                         }
+<<<<<<< HEAD
+
+                        menu.AddSeparator("");
+                        if (Application.isPlaying)
+                        {
+                            menu.AddItem(new GUIContent("StopAll"), false, () => StopAllBlocks());
+                        }
+                        else
+                        {
+                            menu.AddDisabledItem(new GUIContent("StopAll"));//, false);, () => StopAllBlocks());
+                        }
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
                     }
 
                     var menuRect = new Rect();
@@ -1606,6 +1735,27 @@ namespace Fungus.EditorUtils
             }
         }
 
+<<<<<<< HEAD
+        internal void StopThisBlock(Block block)
+        {
+            block.Stop();
+        }
+
+        internal void StopAllBlocks()
+        {
+            flowchart.StopAllBlocks();
+        }
+
+        internal void ExecuteThisBlock(Block block, bool stopRunningBlocks)
+        {
+            if (stopRunningBlocks)
+                StopAllBlocks();
+
+            block.StartExecution();
+        }
+
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         public void DeleteBlocks()
         {
              // Delete any scheduled objects

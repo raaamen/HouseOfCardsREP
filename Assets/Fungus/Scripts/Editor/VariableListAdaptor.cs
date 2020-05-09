@@ -1,12 +1,19 @@
 // This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.com/gofungus).
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 using UnityEngine;
 using UnityEditor;
 using System;
 using UnityEditorInternal;
 using System.Collections.Generic;
+<<<<<<< HEAD
+using System.Linq;
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 
 namespace Fungus.EditorUtils
 {
@@ -47,6 +54,21 @@ namespace Fungus.EditorUtils
                 return this[index].objectReferenceValue as Variable;
         }
 
+<<<<<<< HEAD
+        public void SetVarAt(int index, Variable v)
+        {
+            if (list.list != null)
+            {
+                list.list[index] = v;
+            }
+            else
+            {
+                this[index].objectReferenceValue = v;
+            }
+        }
+
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         public VariableListAdaptor(SerializedProperty arrayProperty, Flowchart _targetFlowchart)
         {
             if (arrayProperty == null)
@@ -152,6 +174,14 @@ namespace Fungus.EditorUtils
                 return;
             }
 
+<<<<<<< HEAD
+            if(Event.current.type == EventType.ContextClick && position.Contains(Event.current.mousePosition))
+            {
+                DoRightClickMenu(index);
+            }
+
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             for (int i = 0; i < 4; ++i)
             {
                 itemRects[i] = position;
@@ -262,6 +292,64 @@ namespace Fungus.EditorUtils
 
             GUI.backgroundColor = Color.white;
         }
+<<<<<<< HEAD
+
+        private void DoRightClickMenu(int index)
+        {
+            var v = GetVarAt(index);
+
+            GenericMenu commandMenu = new GenericMenu();
+            commandMenu.AddItem(new GUIContent("Remove"), false, () => {list.index = index; RemoveItem(list); });
+            commandMenu.AddItem(new GUIContent("Duplicate"), false, () => VariableSelectPopupWindowContent.AddVariable(v.GetType(), v.Key));
+            commandMenu.AddItem(new GUIContent("Find References"), false, () => FindUsage(GetVarAt(index)));
+            commandMenu.AddSeparator("");
+            commandMenu.AddItem(new GUIContent("Sort by Name"), false, () => SortBy(x =>  x.Key));
+            commandMenu.AddItem(new GUIContent("Sort by Type"), false, () => SortBy(x => x.GetType().Name));
+            commandMenu.AddItem(new GUIContent("Sort by Value"), false, () => SortBy(x => x.GetValue()));
+            commandMenu.ShowAsContext();
+        }
+
+        private void SortBy<TKey>(Func<Variable, TKey> orderFunc)
+        {
+            List<Variable> vars = new List<Variable>();
+            for (int i = 0; i < list.count; i++)
+            {
+                vars.Add(GetVarAt(i));
+            }
+
+            vars = vars.OrderBy(orderFunc).ToList();
+
+            for (int i = 0; i < list.count; i++)
+            {
+                SetVarAt(i, vars[i]);
+            }
+
+            _arrayProperty.serializedObject.ApplyModifiedProperties();
+        }
+
+        private void FindUsage(Variable variable)
+        {                
+            var varRefs = EditorExtensions.FindObjectsOfInterface<IVariableReference>()
+                .Where(x => x.HasReference(variable))
+                .Select(x => x.GetLocationIdentifier()).ToArray(); ;
+
+            string varRefString = variable.Key;
+
+            if (varRefs != null && varRefs.Length > 0)
+            {
+                varRefString += " referenced in " + varRefs.Length.ToString() + " places:\n";
+
+                varRefString += string.Join("\n - ", varRefs);
+            }
+            else
+            {
+                varRefString += ", found no references.";
+            }
+
+            Debug.Log(varRefString);
+        }
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
     }
 }
 

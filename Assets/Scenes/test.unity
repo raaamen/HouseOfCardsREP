@@ -2642,7 +2642,6 @@ GameObject:
   - component: {fileID: 1527302855}
   - component: {fileID: 1527302850}
   - component: {fileID: 1527302852}
-  - component: {fileID: 1527302854}
   - component: {fileID: 1527302851}
   - component: {fileID: 1527302883}
   - component: {fileID: 1527302882}
@@ -2673,6 +2672,7 @@ GameObject:
   - component: {fileID: 1527302857}
   - component: {fileID: 1527302853}
   - component: {fileID: 1527302856}
+  - component: {fileID: 1527302854}
   m_Layer: 0
   m_Name: IntroFlowchart
   m_TagString: Untagged
@@ -2693,11 +2693,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 26.195997, y: 95.7131}
+  scrollPos: {x: 283.88226, y: 25.258238}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
-  zoom: 0.8830009
+  blockViewHeight: 263.75
+  zoom: 0.9100001
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2761,7 +2761,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 138.78812
+    width: 138.7912
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2781,6 +2781,7 @@ MonoBehaviour:
   - {fileID: 1527302875}
   - {fileID: 1527302874}
   - {fileID: 1527302872}
+  suppressAllAutoSelections: 0
 --- !u!114 &1527302853
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2809,8 +2810,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1527302852}
-  tagFilter:
-  - 
+  suppressBlockAutoSelect: 0
+  tagFilter: []
   FireOn: 1
 --- !u!4 &1527302855
 Transform:
@@ -2995,6 +2996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1527302860}
+  suppressBlockAutoSelect: 0
   targetToggle: {fileID: 0}
   toggleState: {fileID: 0}
 --- !u!114 &1527302860
@@ -3013,7 +3015,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3.289589
     y: 287.92764
-    width: 134.25812
+    width: 136.15384
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3024,6 +3026,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1527302858}
   - {fileID: 1527302857}
+  suppressAllAutoSelections: 0
 --- !u!114 &1527302861
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3295,6 +3298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1527302876}
+  suppressBlockAutoSelect: 0
   message: Dummy
 --- !u!114 &1527302874
 MonoBehaviour:
@@ -3354,9 +3358,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 4
-    y: 202
-    width: 126.10411
+    x: -1.4764462
+    y: 163.66489
+    width: 130
     height: 40
   tint: {r: 1, g: 0.6179246, b: 0.6179246, a: 1}
   useCustomTint: 1
@@ -3377,6 +3381,7 @@ MonoBehaviour:
   - {fileID: 1527302862}
   - {fileID: 1527302861}
   - {fileID: 1527302856}
+  suppressAllAutoSelections: 0
 --- !u!114 &1527302877
 MonoBehaviour:
   m_ObjectHideFlags: 2

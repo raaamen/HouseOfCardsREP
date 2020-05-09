@@ -93,11 +93,24 @@ namespace Fungus.EditorUtils
                 return;
             }
 
+<<<<<<< HEAD
+            //if there is no selection but we are drawing, fix that
+            if (flowchart.SelectedBlocks.Count == 0)
+            {
+                flowchart.AddSelectedBlock(block);
+            }
+
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             if (activeBlockEditor == null ||
                 !block.Equals(activeBlockEditor.target))
             {
                 DestroyImmediate(activeBlockEditor);
+<<<<<<< HEAD
+                activeBlockEditor = Editor.CreateEditor(block, typeof(BlockEditor)) as BlockEditor;
+=======
                 activeBlockEditor = Editor.CreateEditor(block) as BlockEditor;
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             }
 
             UpdateWindowHeight();

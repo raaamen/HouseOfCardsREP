@@ -122,6 +122,15 @@ namespace Fungus
         /// </summary>
         public abstract void OnReset();
 
+<<<<<<< HEAD
+        /// <summary>
+        /// Boxed or referenced value of type defined within inherited types.
+        /// Not recommended for direct use, primarily intended for use in editor code.
+        /// </summary>
+        public abstract object GetValue();
+
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         #endregion
     }
 
@@ -178,6 +187,14 @@ namespace Fungus
             }
         }
 
+<<<<<<< HEAD
+        public override object GetValue()
+        {
+            return value;
+        }
+
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         protected T startValue;
 
         public override void OnReset()

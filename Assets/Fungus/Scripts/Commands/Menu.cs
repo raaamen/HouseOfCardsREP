@@ -14,7 +14,11 @@ namespace Fungus
                  "Menu", 
                  "Displays a button in a multiple choice menu")]
     [AddComponentMenu("")]
+<<<<<<< HEAD
+    public class Menu : Command, ILocalizable, IBlockCaller
+=======
     public class Menu : Command, ILocalizable
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
     {
         [Tooltip("Text to display on the menu button")]
         [TextArea()]
@@ -101,6 +105,14 @@ namespace Fungus
                 base.HasReference(variable);
         }
 
+<<<<<<< HEAD
+        public bool MayCallBlock(Block block)
+        {
+            return block == targetBlock;
+        }
+
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         #endregion
 
         #region ILocalizable implementation
