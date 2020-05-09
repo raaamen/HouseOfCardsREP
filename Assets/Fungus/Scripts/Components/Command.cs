@@ -39,7 +39,11 @@ namespace Fungus
     /// <summary>
     /// Base class for Commands. Commands can be added to Blocks to create an execution sequence.
     /// </summary>
+<<<<<<< HEAD
     public abstract class Command : MonoBehaviour, IVariableReference
+=======
+    public abstract class Command : MonoBehaviour
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
     {
         [FormerlySerializedAs("commandId")]
         [HideInInspector]
@@ -228,11 +232,14 @@ namespace Fungus
             return false;
         }
 
+<<<<<<< HEAD
         public virtual string GetLocationIdentifier()
         {
             return ParentBlock.GetFlowchart().GetName() + ":" + ParentBlock.BlockName + "." + this.GetType().Name + "#" + CommandIndex.ToString(); 
         }
 
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         /// <summary>
         /// Called by unity when script is loaded or its data changed by editor
         /// </summary>
@@ -252,6 +259,7 @@ namespace Fungus
         }
 
         /// <summary>
+<<<<<<< HEAD
         /// Returns the searchable content for searches on the flowchart window.
         /// </summary>
         public virtual string GetSearchableContent()
@@ -260,6 +268,8 @@ namespace Fungus
         }
 
         /// <summary>
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         /// Returns the help text to display for this command.
         /// </summary>
         public virtual string GetHelpText()
@@ -329,7 +339,11 @@ namespace Fungus
             }
 
             return localizationId;
+<<<<<<< HEAD
         }        
+=======
+        }
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 
         #endregion
     }

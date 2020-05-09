@@ -1,12 +1,19 @@
 // This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.com/gofungus).
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 using UnityEngine;
 using UnityEditor;
 using System;
 using UnityEditorInternal;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Linq;
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 
 namespace Fungus.EditorUtils
 {
@@ -47,6 +54,7 @@ namespace Fungus.EditorUtils
                 return this[index].objectReferenceValue as Variable;
         }
 
+<<<<<<< HEAD
         public void SetVarAt(int index, Variable v)
         {
             if (list.list != null)
@@ -59,6 +67,8 @@ namespace Fungus.EditorUtils
             }
         }
 
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         public VariableListAdaptor(SerializedProperty arrayProperty, Flowchart _targetFlowchart)
         {
             if (arrayProperty == null)
@@ -164,11 +174,14 @@ namespace Fungus.EditorUtils
                 return;
             }
 
+<<<<<<< HEAD
             if(Event.current.type == EventType.ContextClick && position.Contains(Event.current.mousePosition))
             {
                 DoRightClickMenu(index);
             }
 
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             for (int i = 0; i < 4; ++i)
             {
                 itemRects[i] = position;
@@ -279,6 +292,7 @@ namespace Fungus.EditorUtils
 
             GUI.backgroundColor = Color.white;
         }
+<<<<<<< HEAD
 
         private void DoRightClickMenu(int index)
         {
@@ -334,6 +348,8 @@ namespace Fungus.EditorUtils
 
             Debug.Log(varRefString);
         }
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
     }
 }
 

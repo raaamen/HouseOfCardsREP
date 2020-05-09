@@ -1,5 +1,6 @@
 Changelog {#changelog}
 =========
+<<<<<<< HEAD
 
 v3.12.0
 ======
@@ -34,6 +35,9 @@ v3.12.0
 - Warning when requesting menu elements that are not avaialble, such as more menu items that you have created.
 - Fungus Docs can now generate in github markdown format
 
+=======
+[TOC]
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 
 v3.11.5 {#v3.11.5}
 ======

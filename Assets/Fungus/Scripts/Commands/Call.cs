@@ -30,7 +30,11 @@ namespace Fungus
                  "Call", 
                  "Execute another block in the same Flowchart as the command, or in a different Flowchart.")]
     [AddComponentMenu("")]
+<<<<<<< HEAD
     public class Call : Command, IBlockCaller
+=======
+    public class Call : Command
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
     {
         [Tooltip("Flowchart which contains the block to execute. If none is specified then the current Flowchart is used.")]
         [SerializeField] protected Flowchart targetFlowchart;
@@ -77,6 +81,10 @@ namespace Fungus
                 if (callMode == CallMode.WaitUntilFinished)
                 {
                     onComplete = delegate {
+<<<<<<< HEAD
+=======
+                        flowchart.SelectedBlock = ParentBlock;
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
                         Continue();
                     };
                 }
@@ -95,6 +103,16 @@ namespace Fungus
                 if (targetFlowchart == null ||
                     targetFlowchart.Equals(GetFlowchart()))
                 {
+<<<<<<< HEAD
+=======
+                    // If the executing block is currently selected then follow the execution 
+                    // onto the next block in the inspector.
+                    if (flowchart.SelectedBlock == ParentBlock)
+                    {
+                        flowchart.SelectedBlock = targetBlock;
+                    }
+
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
                     if (callMode == CallMode.StopThenCall)
                     {
                         StopParentBlock();
@@ -158,11 +176,14 @@ namespace Fungus
             return startLabel.stringRef == variable || base.HasReference(variable);
         }
 
+<<<<<<< HEAD
         public bool MayCallBlock(Block block)
         {
             return block == targetBlock;
         }
 
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         #endregion
     }
 }

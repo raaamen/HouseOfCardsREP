@@ -8,6 +8,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+<<<<<<< HEAD
+=======
+using System.Text.RegularExpressions;
+using System.IO;
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 using System.Reflection;
 
 namespace Fungus.EditorUtils
@@ -31,9 +36,12 @@ namespace Fungus.EditorUtils
 
         private Rect lastEventPopupPos, lastCMDpopupPos;
 
+<<<<<<< HEAD
         private string callersString;
         private bool callersFoldout;
 
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
     
         protected virtual void OnEnable()
         {
@@ -57,6 +65,7 @@ namespace Fungus.EditorUtils
             commandListProperty = serializedObject.FindProperty("commandList");
 
             commandListAdaptor = new CommandListAdaptor(target as Block, commandListProperty);
+<<<<<<< HEAD
         }
 
         protected void CacheCallerString()
@@ -76,6 +85,8 @@ namespace Fungus.EditorUtils
                 callersString = string.Join("\n", callers);
             else
                 callersString = "None";
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 
         }
 
@@ -152,6 +163,7 @@ namespace Fungus.EditorUtils
 
                 SerializedProperty descriptionProp = serializedObject.FindProperty("description");
                 EditorGUILayout.PropertyField(descriptionProp);
+<<<<<<< HEAD
 
 
                 SerializedProperty suppressProp = serializedObject.FindProperty("suppressAllAutoSelections");
@@ -167,6 +179,8 @@ namespace Fungus.EditorUtils
                 }
                 EditorGUI.indentLevel--;
                 
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
                 EditorGUILayout.Space();
                 
                 DrawEventHandlerGUI(flowchart);
@@ -354,6 +368,7 @@ namespace Fungus.EditorUtils
             // Add Button
             if (GUILayout.Button(addIcon))
             {
+<<<<<<< HEAD
                 //this may be less reliable for HDPI scaling but previous method using editor window height is now returning 
                 //  null in 2019.2 suspect ongoing ui changes, so default to screen.height and then attempt to get the better result
                 int h = Screen.height;
@@ -363,6 +378,11 @@ namespace Fungus.EditorUtils
                 CommandSelectorPopupWindowContent.ShowCommandMenu(lastCMDpopupPos, "", target as Block,
                     (int)(EditorGUIUtility.currentViewWidth),
                     (int)(h - lastCMDpopupPos.y));
+=======
+                CommandSelectorPopupWindowContent.ShowCommandMenu(lastCMDpopupPos, "", target as Block,
+                    (int)(EditorGUIUtility.currentViewWidth),
+                    (int)(EditorWindow.focusedWindow.position.height - lastCMDpopupPos.y));
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             }
 
             // Duplicate Button
@@ -515,6 +535,190 @@ namespace Fungus.EditorUtils
             return result;
         }
 
+<<<<<<< HEAD
+=======
+        [MenuItem("Tools/Fungus/Utilities/Export Reference Docs")]
+        protected static void ExportReferenceDocs()
+        {
+            const string path = "./Docs";
+
+            ExportCommandInfo(path);
+            ExportEventHandlerInfo(path);
+
+            FlowchartWindow.ShowNotification("Exported Reference Documentation");
+        }
+
+        public static List<KeyValuePair<System.Type, CommandInfoAttribute>> GetFilteredCommandInfoAttribute(List<System.Type> menuTypes)
+        {
+            Dictionary<string, KeyValuePair<System.Type, CommandInfoAttribute>> filteredAttributes = new Dictionary<string, KeyValuePair<System.Type, CommandInfoAttribute>>();
+
+            foreach (System.Type type in menuTypes)
+            {
+                object[] attributes = type.GetCustomAttributes(false);
+                foreach (object obj in attributes)
+                {
+                    CommandInfoAttribute infoAttr = obj as CommandInfoAttribute;
+                    if (infoAttr != null)
+                    {
+                        string dictionaryName = string.Format("{0}/{1}", infoAttr.Category, infoAttr.CommandName);
+
+                        int existingItemPriority = -1;
+                        if (filteredAttributes.ContainsKey(dictionaryName))
+                        {
+                            existingItemPriority = filteredAttributes[dictionaryName].Value.Priority;
+                        }
+
+                        if (infoAttr.Priority > existingItemPriority)
+                        {
+                            KeyValuePair<System.Type, CommandInfoAttribute> keyValuePair = new KeyValuePair<System.Type, CommandInfoAttribute>(type, infoAttr);
+                            filteredAttributes[dictionaryName] = keyValuePair;
+                        }
+                    }
+                }
+            }
+            return filteredAttributes.Values.ToList<KeyValuePair<System.Type, CommandInfoAttribute>>();
+        }
+
+
+        // Compare delegate for sorting the list of command attributes
+        public static int CompareCommandAttributes(KeyValuePair<System.Type, CommandInfoAttribute> x, KeyValuePair<System.Type, CommandInfoAttribute> y)
+        {
+            int compare = (x.Value.Category.CompareTo(y.Value.Category));
+            if (compare == 0)
+            {
+                compare = (x.Value.CommandName.CompareTo(y.Value.CommandName));
+            }
+            return compare;
+        }
+
+        protected static void ExportCommandInfo(string path)
+        {
+            // Dump command info
+            List<System.Type> menuTypes = EditorExtensions.FindDerivedTypes(typeof(Command)).ToList();
+            List<KeyValuePair<System.Type, CommandInfoAttribute>> filteredAttributes = GetFilteredCommandInfoAttribute(menuTypes);
+            filteredAttributes.Sort(CompareCommandAttributes);
+
+            // Build list of command categories
+            List<string> commandCategories = new List<string>();
+            foreach (var keyPair in filteredAttributes)
+            {
+                CommandInfoAttribute info = keyPair.Value;
+                if (info.Category != "" &&
+                    !commandCategories.Contains(info.Category))
+                {
+                    commandCategories.Add(info.Category);
+                }
+            }
+            commandCategories.Sort();
+
+            // Output the commands in each category
+            foreach (string category in commandCategories)
+            {
+                string markdown = "# " + category + " commands # {#" + category.ToLower() + "_commands}\n\n";
+                markdown += "[TOC]\n";
+
+                foreach (var keyPair in filteredAttributes)
+                {
+                    CommandInfoAttribute info = keyPair.Value;
+
+                    if (info.Category == category ||
+                        info.Category == "" && category == "Scripting")
+                    {
+                        markdown += "# " + info.CommandName + " # {#" + info.CommandName.Replace(" ", "") + "}\n";
+                        markdown += info.HelpText + "\n\n";
+                        markdown += "Defined in " + keyPair.Key.FullName + "\n";
+                        markdown += GetPropertyInfo(keyPair.Key);
+                    }
+                }
+
+                string filePath = path + "/command_ref/" + category.ToLower() + "_commands.md";
+
+                Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+                File.WriteAllText(filePath, markdown);
+            }
+        }
+
+        protected static void ExportEventHandlerInfo(string path)
+        {
+            List<System.Type> eventHandlerTypes = EditorExtensions.FindDerivedTypes(typeof(EventHandler)).ToList();
+            List<string> eventHandlerCategories = new List<string>();
+            eventHandlerCategories.Add("Core");
+            foreach (System.Type type in eventHandlerTypes)
+            {
+                EventHandlerInfoAttribute info = EventHandlerEditor.GetEventHandlerInfo(type);
+                if (info != null &&
+                    info.Category != "" &&
+                    !eventHandlerCategories.Contains(info.Category))
+                {
+                    eventHandlerCategories.Add(info.Category);
+                }
+            }
+            eventHandlerCategories.Sort();
+
+            // Output the commands in each category
+            foreach (string category in eventHandlerCategories)
+            {
+                string markdown = "# " + category + " event handlers # {#" + category.ToLower() + "_events}\n\n";
+                markdown += "[TOC]\n";
+
+                foreach (System.Type type in eventHandlerTypes)
+                {
+                    EventHandlerInfoAttribute info = EventHandlerEditor.GetEventHandlerInfo(type);
+
+                    if (info != null &&
+                        (info.Category == category ||
+                         (info.Category == "" && category == "Core")))
+                    {
+                        markdown += "# " + info.EventHandlerName + " # {#" + info.EventHandlerName.Replace(" ", "") + "}\n";
+                        markdown += info.HelpText + "\n\n";
+                        markdown += "Defined in " + type.FullName + "\n";
+                        markdown += GetPropertyInfo(type);
+                    }
+                }
+
+                string filePath = path + "/command_ref/" + category.ToLower() + "_events.md";
+
+                Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+                File.WriteAllText(filePath, markdown);
+            }
+        }
+
+        protected static string GetPropertyInfo(System.Type type)
+        {
+            string markdown = "";
+            foreach (FieldInfo field in type.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic))
+            {
+                TooltipAttribute attribute = (TooltipAttribute)Attribute.GetCustomAttribute(field, typeof(TooltipAttribute));
+                if (attribute == null)
+                {
+                    continue;
+                }
+
+                // Change field name to how it's displayed in the inspector
+                string propertyName = Regex.Replace(field.Name, "(\\B[A-Z])", " $1");
+                if (propertyName.Length > 1)
+                {
+                    propertyName = propertyName.Substring(0, 1).ToUpper() + propertyName.Substring(1);
+                }
+                else
+                {
+                    propertyName = propertyName.ToUpper();
+                }
+
+                markdown += propertyName + " | " + field.FieldType + " | " + attribute.tooltip + "\n";
+            }
+
+            if (markdown.Length > 0)
+            {
+                markdown = "\nProperty | Type | Description\n --- | --- | ---\n" + markdown + "\n";
+            }
+
+            return markdown;
+        }
+
+
+
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         public virtual void ShowContextMenu()
         {
             var block = target as Block;
@@ -900,6 +1104,7 @@ namespace Fungus.EditorUtils
 
             Repaint();
         }
+<<<<<<< HEAD
 
 
 
@@ -944,5 +1149,7 @@ namespace Fungus.EditorUtils
             }
             return compare;
         }
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
     }
 }

@@ -10,6 +10,7 @@ namespace Fungus.EditorUtils
 {
     public class CommandListAdaptor
     {
+<<<<<<< HEAD
         public void DrawCommandList()
         {
             if (summaryStyle == null)
@@ -38,6 +39,11 @@ namespace Fungus.EditorUtils
                 commandLabelStyle.alignment = TextAnchor.MiddleLeft;
             }
 
+=======
+
+        public void DrawCommandList()
+        {
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             if (block.CommandList.Count == 0)
             {
                 EditorGUILayout.HelpBox("Press the + button below to add a command to the list.", MessageType.Info);
@@ -55,7 +61,10 @@ namespace Fungus.EditorUtils
         protected ReorderableList list;
 
         protected Block block;
+<<<<<<< HEAD
         protected GUIStyle summaryStyle, commandLabelStyle;
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 
         public float fixedItemHeight;
 
@@ -83,6 +92,7 @@ namespace Fungus.EditorUtils
             list.drawHeaderCallback = DrawHeader;
             list.drawElementCallback = DrawItem;
             //list.elementHeightCallback = GetElementHeight;
+<<<<<<< HEAD
             list.onSelectCallback = SelectChanged;
         }
 
@@ -100,13 +110,27 @@ namespace Fungus.EditorUtils
         private void DrawHeader(Rect rect)
         {
             if (rect.width < 0) return;
+=======
+        }
+
+        //private float GetElementHeight(int index)
+        //{
+        //    return EditorGUI.GetPropertyHeight(this[index], null, true);// + EditorGUIUtility.singleLineHeight;
+        //}
+
+        private void DrawHeader(Rect rect)
+        {
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             EditorGUI.LabelField(rect, new GUIContent("Commands"));
         }
 
         public void DrawItem(Rect position, int index, bool selected, bool focused)
         {
+<<<<<<< HEAD
             if (position.width < 0) return;
 
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             Command command = this[index].objectReferenceValue as Command;
 
             if (command == null)
@@ -129,6 +153,10 @@ namespace Fungus.EditorUtils
             bool isComment = command.GetType() == typeof(Comment);
             bool isLabel = (command.GetType() == typeof(Label));
 
+<<<<<<< HEAD
+=======
+            bool error = false;
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             string summary = command.GetSummary();
             if (summary == null)
             {
@@ -140,7 +168,11 @@ namespace Fungus.EditorUtils
             }
             if (summary.StartsWith("Error:"))
             {
+<<<<<<< HEAD
                 summary = "<color=red> " + summary + "</color>";
+=======
+                error = true;
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             }
 
             if (isComment || isLabel)
@@ -163,7 +195,23 @@ namespace Fungus.EditorUtils
             }
 
             string commandName = commandInfoAttr.CommandName;
+<<<<<<< HEAD
             
+=======
+
+            GUIStyle commandLabelStyle = new GUIStyle(GUI.skin.box);
+            commandLabelStyle.normal.background = FungusEditorResources.CommandBackground;
+            int borderSize = 5;
+            commandLabelStyle.border.top = borderSize;
+            commandLabelStyle.border.bottom = borderSize;
+            commandLabelStyle.border.left = borderSize;
+            commandLabelStyle.border.right = borderSize;
+            commandLabelStyle.alignment = TextAnchor.MiddleLeft;
+            commandLabelStyle.richText = true;
+            commandLabelStyle.fontSize = 11;
+            commandLabelStyle.padding.top -= 1;
+
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             float indentSize = 20;
             for (int i = 0; i < command.IndentLevel; ++i)
             {
@@ -234,7 +282,10 @@ namespace Fungus.EditorUtils
                             flowchart.ClearSelectedCommands();
                         });
                         Event.current.Use();
+<<<<<<< HEAD
                         list.index = index;
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
                     }
 
                     BlockEditor.actionList.Add(delegate
@@ -327,6 +378,13 @@ namespace Fungus.EditorUtils
             {
                 commandLabelColor = Color.grey;
             }
+<<<<<<< HEAD
+=======
+            else if (error)
+            {
+                // TODO: Show warning icon
+            }
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
 
             GUI.backgroundColor = commandLabelColor;
 
@@ -378,9 +436,35 @@ namespace Fungus.EditorUtils
                 summaryRect.width -= commandNameWidth + 5;
             }
 
+<<<<<<< HEAD
             GUI.Label(summaryRect, summary, summaryStyle);
             
             GUI.backgroundColor = Color.white;
         }
+=======
+            GUIStyle summaryStyle = new GUIStyle();
+            summaryStyle.fontSize = 10;
+            summaryStyle.padding.top += 5;
+            summaryStyle.richText = true;
+            summaryStyle.wordWrap = false;
+            summaryStyle.clipping = TextClipping.Clip;
+            commandLabelStyle.alignment = TextAnchor.MiddleLeft;
+            GUI.Label(summaryRect, summary, summaryStyle);
+
+            if (error)
+            {
+                GUISkin editorSkin = EditorGUIUtility.GetBuiltinSkin(EditorSkin.Inspector);
+                Rect errorRect = new Rect(summaryRect);
+                errorRect.x += errorRect.width - 20;
+                errorRect.y += 2;
+                errorRect.width = 20;
+                GUI.Label(errorRect, editorSkin.GetStyle("CN EntryError").normal.background);
+                summaryRect.width -= 20;
+            }
+
+            GUI.backgroundColor = Color.white;
+        }
+
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
     }
 }

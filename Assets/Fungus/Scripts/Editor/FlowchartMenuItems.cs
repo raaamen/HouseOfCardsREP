@@ -37,6 +37,7 @@ namespace Fungus.EditorUtils
         }
 
         [MenuItem("Tools/Fungus/Utilities/Export Fungus Package")]
+<<<<<<< HEAD
         static void ExportFungusPackageFull()
         {
             ExportFungusPackage( new string[] {"Assets/Fungus", "Assets/FungusExamples" });
@@ -52,13 +53,27 @@ namespace Fungus.EditorUtils
         {
             string path = EditorUtility.SaveFilePanel("Export Fungus Package", "", "Fungus", "unitypackage");
             if (path.Length == 0)
+=======
+        static void ExportFungusPackage()
+        {
+            string path = EditorUtility.SaveFilePanel("Export Fungus Package", "", "Fungus", "unitypackage");           
+            if(path.Length == 0) 
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             {
                 return;
             }
 
+<<<<<<< HEAD
             AssetDatabase.ExportPackage(folders, path, ExportPackageOptions.Recurse);
         }
 
+=======
+            string[] folders = new string[] {"Assets/Fungus", "Assets/FungusExamples" };
+
+            AssetDatabase.ExportPackage(folders, path, ExportPackageOptions.Recurse);
+        }
+            
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         public static GameObject SpawnPrefab(string prefabName)
         {
             GameObject prefab = Resources.Load<GameObject>("Prefabs/" + prefabName);

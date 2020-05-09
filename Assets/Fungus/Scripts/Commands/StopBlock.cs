@@ -11,7 +11,11 @@ namespace Fungus
     [CommandInfo("Flow", 
                  "Stop Block", 
                  "Stops executing the named Block")]
+<<<<<<< HEAD
     public class StopBlock : Command, IBlockCaller
+=======
+    public class StopBlock : Command 
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
     {
         [Tooltip("Flowchart containing the Block. If none is specified, the parent Flowchart is used.")]
         [SerializeField] protected Flowchart flowchart;
@@ -60,6 +64,7 @@ namespace Fungus
             return blockName.stringRef == variable || base.HasReference(variable);
         }
 
+<<<<<<< HEAD
         public bool MayCallBlock(Block block)
         {
             if(flowchart != null)
@@ -67,6 +72,8 @@ namespace Fungus
             return false;
         }
 
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         #endregion
     }
 }

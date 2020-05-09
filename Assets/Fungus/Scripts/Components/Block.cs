@@ -61,6 +61,7 @@ namespace Fungus
 
         protected bool executionInfoSet = false;
 
+<<<<<<< HEAD
         /// <summary>
         /// If set, flowchart will not auto select when it is next executed, used by eventhandlers.
         /// Only effects the editor.
@@ -70,6 +71,8 @@ namespace Fungus
         [SerializeField] bool suppressAllAutoSelections = false;
         
 
+=======
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         protected virtual void Awake()
         {
             SetExecutionInfo();
@@ -234,6 +237,7 @@ namespace Fungus
             executionState = ExecutionState.Executing;
             BlockSignals.DoBlockStart(this);
 
+<<<<<<< HEAD
             bool suppressSelectionChanges = false;
 
             #if UNITY_EDITOR
@@ -251,6 +255,15 @@ namespace Fungus
                     flowchart.ClearSelectedCommands();
                     flowchart.AddSelectedCommand(commandList[0]);
                 }
+=======
+            #if UNITY_EDITOR
+            // Select the executing block & the first command
+            flowchart.SelectedBlock = this;
+            if (commandList.Count > 0)
+            {
+                flowchart.ClearSelectedCommands();
+                flowchart.AddSelectedCommand(commandList[0]);
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
             }
             #endif
 
@@ -293,7 +306,11 @@ namespace Fungus
                 var command = commandList[i];
                 activeCommand = command;
 
+<<<<<<< HEAD
                 if (flowchart.IsActive() && !suppressSelectionChanges)
+=======
+                if (flowchart.IsActive())
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
                 {
                     // Auto select a command in some situations
                     if ((flowchart.SelectedCommands.Count == 0 && i == 0) ||

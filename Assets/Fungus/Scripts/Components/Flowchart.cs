@@ -1186,6 +1186,7 @@ namespace Fungus
             var res = gameObject.GetComponents<Block>();
             selectedBlocks = res.Where(x => x.IsSelected).ToList();
         }
+<<<<<<< HEAD
 
         public void ReverseUpdateSelectedCache()
         {
@@ -1198,6 +1199,9 @@ namespace Fungus
             }
         }
 
+=======
+        
+>>>>>>> c16a4ba44c6bdef2175a38af61ead757c30ca5dc
         /// <summary>
         /// Reset the commands and variables in the Flowchart.
         /// </summary>
