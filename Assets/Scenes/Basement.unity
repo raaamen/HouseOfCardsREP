@@ -1751,7 +1751,7 @@ GameObject:
   - component: {fileID: 256635008}
   m_Layer: 8
   m_Name: Dummy
-  m_TagString: Enemy
+  m_TagString: Dummy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8072,6 +8072,86 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.1759927}
   m_EdgeRadius: 0
+--- !u!1 &1019721617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1019721621}
+  - component: {fileID: 1019721620}
+  - component: {fileID: 1019721619}
+  - component: {fileID: 1019721618}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1019721618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019721617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d49b7c1bcd2e07499844da127be038d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ForceModuleActive: 0
+--- !u!114 &1019721619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019721617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1019721620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019721617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 5
+--- !u!4 &1019721621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019721617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1022783323
 GameObject:
   m_ObjectHideFlags: 0
@@ -9033,7 +9113,7 @@ GameObject:
   - component: {fileID: 1147689851}
   m_Layer: 8
   m_Name: Dummy 2
-  m_TagString: Enemy
+  m_TagString: Dummy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12232,6 +12312,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1666647182 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2361420610501937068, guid: 8064b88f5063136439f42e676d0788e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2361420611849607262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1666647186 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2361420610501937073, guid: 8064b88f5063136439f42e676d0788e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2361420611849607262}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7358e7a30e7af4789b61326d5bd0fe4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1700870856
 GameObject:
   m_ObjectHideFlags: 0
@@ -15652,7 +15750,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2361420610501937072, guid: 8064b88f5063136439f42e676d0788e7,
+        type: 3}
+      propertyPath: anim1
+      value: 
+      objectReference: {fileID: 1666647182}
+    - target: {fileID: 2361420610501937069, guid: 8064b88f5063136439f42e676d0788e7,
+        type: 3}
+      propertyPath: plrattack
+      value: 
+      objectReference: {fileID: 1666647186}
+    - target: {fileID: 2361420610501937066, guid: 8064b88f5063136439f42e676d0788e7,
+        type: 3}
+      propertyPath: m_EdgeRadius
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2361420610501937075, guid: 8064b88f5063136439f42e676d0788e7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8064b88f5063136439f42e676d0788e7, type: 3}
 --- !u!114 &4314315176336511124
 MonoBehaviour:

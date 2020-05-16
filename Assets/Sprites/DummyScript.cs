@@ -18,7 +18,7 @@ public class DummyScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             hp -= 1;
-            Destroy(collision.gameObject);
+            
         }
         if (collision.gameObject.CompareTag("Sword"))
         {
