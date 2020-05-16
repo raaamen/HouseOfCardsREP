@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+
+    public GameObject collidingWith;
+
+    public PlayerScript plrscrpt;
+
     //Ints
     public int damage;
+    public int cooldown;
 
     //Floats
     private float timeBtwAttack;
@@ -13,40 +19,52 @@ public class PlayerAttack : MonoBehaviour
     public float attackRangeX;
     public float attackRangeY;
 
+
+
     //Transforms
     public Transform attackPos;
 
     //LayerMasks
-    public LayerMask whatIsEnemies;
+
+
+    public bool canAttack;
+
     // Start is called before the first frame update
     void Start()
     {
+        plrscrpt = GetComponent<PlayerScript>();
+        plrscrpt.canAttack = true;
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timeBtwAttack <= 0)
+        if (plrscrpt.canAttack == true)
         {
             //Now you can attack
-            if (Input.GetKey(KeyCode.J))
+            if (Input.GetKey(KeyCode.J) && collidingWith != null)
             {
-                Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, whatIsEnemies);
-                for (int i = 0; i < enemiesToDamage.Length; i++)
+                StartCoroutine(EnemyFlashRed(collidingWith));
+                switch (collidingWith.tag)
                 {
-                    enemiesToDamage[i].GetComponent<DummyScript>().TakeDamage(damage);
+                    case "Dummy":
+                        collidingWith.GetComponent<DummyScript>().TakeDamage(damage);
+                        break;
+                    case "Enemy":
+                        collidingWith.GetComponent<EnemyScript>().TakeDamage(damage);
+                        break;
+                    
                 }
-
+                canAttack = false;
+                StartCoroutine("WaitForAttack");
             }
-
-            timeBtwAttack = startTimeBtwAttack;
-        }
-        else
-        {
-            timeBtwAttack -= Time.deltaTime;
         }
         
+        
+
+
+
     }
     void OnDrawGizmosSelected()
     {
@@ -55,4 +73,39 @@ public class PlayerAttack : MonoBehaviour
             
 
     }
+
+    public IEnumerator EnemyFlashRed(GameObject enemy)
+    {
+        if (enemy.activeInHierarchy)
+        {
+            enemy.GetComponent<SpriteRenderer>().color = Color.red;
+            yield return new WaitForSecondsRealtime(0.1f);
+            enemy.GetComponent<SpriteRenderer>().color = Color.white;
+            yield return new WaitForSecondsRealtime(0.1f);
+            enemy.GetComponent<SpriteRenderer>().color = Color.red;
+            yield return new WaitForSecondsRealtime(0.1f);
+            enemy.GetComponent<SpriteRenderer>().color = Color.white;
+            yield return null;
+            Destroy(gameObject);
+            yield return null;
+        }
+    }
+    public IEnumerator WaitForAttack()
+    {
+        Debug.Log("Waiting");
+        
+        yield return new WaitForSeconds(cooldown);
+        plrscrpt.canAttack = true;
+
+    }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        collidingWith = collision.gameObject;
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        collidingWith = null;
+    }
+
+
 }

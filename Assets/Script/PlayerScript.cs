@@ -23,6 +23,7 @@ public class PlayerScript : MonoBehaviour
     public float meleeCoolDown;
     //Booleans
     public bool lookingRight = true;
+    public bool canAttack;
 
     //Refrences
     public GameObject throwingCard1;
@@ -31,6 +32,8 @@ public class PlayerScript : MonoBehaviour
     public GameObject throwingCard4;
 
     public Animator Anim;
+
+    public PlayerAttack plrattack;
     
 
     // Start is called before the first frame update
@@ -44,13 +47,12 @@ public class PlayerScript : MonoBehaviour
         Offset3.x = 3;
         Offset4.y = 3;
 
-
+        plrattack = GetComponent<PlayerAttack>();
     }
 
     void Update()
     {
         shootCoolDown += Time.deltaTime;
-        meleeCoolDown += Time.deltaTime;
 
 
         // Allows the player to use WASD for movement.
@@ -81,11 +83,14 @@ public class PlayerScript : MonoBehaviour
         }*/
 
 
-        if (Input.GetKeyDown(KeyCode.J) && meleeCoolDown >= 1)
+        if (Input.GetKeyDown(KeyCode.J) && canAttack)
         {
+            Debug.Log("Attacking anim");
             Anim.SetBool("Attacking", true);
-            meleeCoolDown = 0;
-        }else
+            canAttack = false;
+            StartCoroutine(plrattack.WaitForAttack());
+        }
+        else
         {
             Anim.SetBool("Attacking", false);
         }
