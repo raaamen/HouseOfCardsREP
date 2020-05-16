@@ -16,9 +16,13 @@ public class EnemyScript : MonoBehaviour
     public int curHealth;
     public int maxHealth;
 
+    //Animations
+
     private void Start()
     {
+        //targets any gameobject with the tag "Player"
         Target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        //gets the PlayerScript from any gameobject with the tag "Player"
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
 
         movementSpeed = 2;
@@ -54,6 +58,10 @@ public class EnemyScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             player.Damage(5);
+        }
+        if (collision.CompareTag("Range"))
+        {
+
         }
     }
     public void TakeDamage(int damage)

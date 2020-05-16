@@ -5,13 +5,30 @@ using UnityEngine;
 public class DummyScript : MonoBehaviour
 {
     public int hp = 5;
-
-    public void TakeDamage(int damage)
+    // Update is called once per frame
+    void Update()
     {
-        hp -= damage;
         if (hp <= 0)
         {
             Destroy(gameObject);
         }
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            hp -= 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("Sword"))
+        {
+            hp -= 1;
+            Destroy(gameObject);
+        }
+    }
+    public void TakeDamage(int damage)
+    {
+        hp -= damage;
+        
     }
 }
