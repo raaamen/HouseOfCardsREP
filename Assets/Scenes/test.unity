@@ -485,7 +485,7 @@ RectTransform:
   m_Children:
   - {fileID: 1715743564}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -766,7 +766,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &181044767
 GameObject:
@@ -1410,7 +1410,7 @@ RectTransform:
   m_Children:
   - {fileID: 1382780131}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2183,7 +2183,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1299731960
 GameObject:
@@ -2370,6 +2370,7 @@ MonoBehaviour:
   shootCoolDown: 0
   meleeCoolDown: 0
   lookingRight: 1
+  canAttack: 0
   throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
     type: 3}
   throwingCard2: {fileID: 7655508523414071973, guid: 9e7bba993eaec934bbee1db25cf14f21,
@@ -2379,6 +2380,7 @@ MonoBehaviour:
   throwingCard4: {fileID: 5652454831798775770, guid: ee15379b78b9cc54dbb9f6adfc2b3fe3,
     type: 3}
   Anim: {fileID: 0}
+  plrattack: {fileID: 0}
 --- !u!50 &1331164600
 Rigidbody2D:
   serializedVersion: 4
@@ -2693,18 +2695,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 26.195997, y: 95.7131}
+  scrollPos: {x: 295.14572, y: 33.918198}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.8830009
+  zoom: 0.793001
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1527302876}
   selectedCommands: []
   variables:
   - {fileID: 1527302853}
@@ -2759,9 +2762,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
-    y: 70
-    width: 138.78812
+    x: -3.6178207
+    y: 111.614075
+    width: 141.80316
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3013,7 +3016,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3.289589
     y: 287.92764
-    width: 134.25812
+    width: 139.78552
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3354,9 +3357,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 4
-    y: 202
-    width: 126.10411
+    x: -2.3051624
+    y: 196.95587
+    width: 133.73256
     height: 40
   tint: {r: 1, g: 0.6179246, b: 0.6179246, a: 1}
   useCustomTint: 1
