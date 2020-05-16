@@ -8,6 +8,8 @@ TagManager:
   - Dialougue Trigger
   - RuleCard
   - Bullet
+  - Wall
+  - Houses
   layers:
   - Default
   - TransparentFX
