@@ -16,9 +16,13 @@ public class EnemyScript : MonoBehaviour
     public int curHealth;
     public int maxHealth;
 
+    //Animations
+
     private void Start()
     {
+        //targets any gameobject with the tag "Player"
         Target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        //gets the PlayerScript from any gameobject with the tag "Player"
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
 
         movementSpeed = 2;
