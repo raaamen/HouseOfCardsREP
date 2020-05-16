@@ -4179,7 +4179,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &537306291
 GameObject:
@@ -8276,7 +8276,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1022783323
 GameObject:
@@ -15821,6 +15821,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerStill
       objectReference: {fileID: 0}
+    - target: {fileID: 2361420610501937073, guid: 8064b88f5063136439f42e676d0788e7,
+        type: 3}
+      propertyPath: cooldown
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2361420610501937071, guid: 8064b88f5063136439f42e676d0788e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15881,6 +15886,11 @@ PrefabInstance:
       propertyPath: anim1
       value: 
       objectReference: {fileID: 1666647182}
+    - target: {fileID: 2361420610501937072, guid: 8064b88f5063136439f42e676d0788e7,
+        type: 3}
+      propertyPath: MoveSpeed
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2361420610501937069, guid: 8064b88f5063136439f42e676d0788e7,
         type: 3}
       propertyPath: plrattack
