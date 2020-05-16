@@ -55,6 +55,10 @@ public class EnemyScript : MonoBehaviour
         {
             player.Damage(5);
         }
+        if (collision.CompareTag("Range"))
+        {
+
+        }
     }
     public void TakeDamage(int damage)
     {

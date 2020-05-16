@@ -20,6 +20,11 @@ public class DummyScript : MonoBehaviour
             hp -= 1;
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.CompareTag("Sword"))
+        {
+            hp -= 1;
+            Destroy(gameObject);
+        }
     }
     public void TakeDamage(int damage)
     {
