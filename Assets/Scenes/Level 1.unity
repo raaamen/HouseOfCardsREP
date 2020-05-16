@@ -6052,7 +6052,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1356193773
 MonoBehaviour:
@@ -6074,6 +6074,8 @@ MonoBehaviour:
   Direction: 0
   shootCoolDown: 0
   meleeCoolDown: 0
+  dashSpeed: 0
+  startDashTime: 0
   lookingRight: 1
   throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
     type: 3}
@@ -6225,6 +6227,8 @@ MonoBehaviour:
   Direction: 0
   shootCoolDown: 0
   meleeCoolDown: 0
+  dashSpeed: 0
+  startDashTime: 0
   lookingRight: 1
   throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
     type: 3}

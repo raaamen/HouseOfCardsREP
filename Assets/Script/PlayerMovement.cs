@@ -6,11 +6,16 @@ public class PlayerMovement : MonoBehaviour
 {
     public Animator anim1;
 
+    //Ints
+    private int Direction;
+
+    //Floats
     public float MoveSpeed = 20f;
     //public float speed;
     private float moveX;
     private float moveY;
 
+    //Booleans 
     private bool facingRight = true;
     private bool facingUp = true;
 

@@ -21,6 +21,10 @@ public class PlayerScript : MonoBehaviour
     //Floats
     public float shootCoolDown;
     public float meleeCoolDown;
+    public float dashSpeed;
+    public float startDashTime;
+    private float dashTime;
+
     //Booleans
     public bool lookingRight = true;
 
@@ -31,13 +35,15 @@ public class PlayerScript : MonoBehaviour
     public GameObject throwingCard4;
 
     public Animator Anim;
-    
+    public Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
         Direction = 3;
         shootCoolDown = 2f;
+        dashTime = startDashTime;
+
     }
 
     void Update()
@@ -68,7 +74,23 @@ public class PlayerScript : MonoBehaviour
             Direction = 3;
             //transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
- 
+        else
+        {
+            if(dashTime <= 0)
+            {
+                Direction = 0;
+            }
+            else
+            {
+                dashTime -= Time.deltaTime;
+
+                if (Direction == 1)
+                {
+                    rb.velocity = Vector2.left * dashSpeed;
+                }
+            }
+        }
+
         /*{
             lookingRight = true;
         }*/
