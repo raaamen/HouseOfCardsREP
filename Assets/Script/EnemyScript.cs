@@ -31,7 +31,7 @@ public class EnemyScript : MonoBehaviour
 
         movementSpeed = 2;
 
-        maxHealth = 10;
+        maxHealth = 5;
 
 
         curHealth = maxHealth;
@@ -73,6 +73,13 @@ public class EnemyScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             anim.SetBool("inRange", false);
+        }
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            TakeDamage(1);
         }
     }
     public void TakeDamage(int damage)

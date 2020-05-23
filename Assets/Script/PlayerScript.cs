@@ -48,12 +48,19 @@ public class PlayerScript : MonoBehaviour
         Offset4.y = 3;
 
         plrattack = GetComponent<PlayerAttack>();
+
+        Health = 100;
     }
 
     void Update()
     {
         shootCoolDown += Time.deltaTime;
 
+
+        if (Health <= 0)
+        {
+            Destroy(gameObject);
+        }
 
         // Allows the player to use WASD for movement.
         if (Input.GetKey(KeyCode.W))
@@ -144,5 +151,12 @@ public class PlayerScript : MonoBehaviour
         Debug.Log("You Died!");
         SceneManager.LoadScene("q");
 
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Sword"))
+        {
+            Damage(1);
+        }
     }
 }
