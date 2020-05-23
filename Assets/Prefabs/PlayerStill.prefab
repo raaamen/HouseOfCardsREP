@@ -17,9 +17,10 @@ GameObject:
   - component: {fileID: 2361420610501937068}
   - component: {fileID: 2361420610501937069}
   - component: {fileID: 2361420610501937066}
+  - component: {fileID: 5365098230460950288}
   m_Layer: 0
   m_Name: PlayerStill
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,14 +102,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7358e7a30e7af4789b61326d5bd0fe4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collidingWith: {fileID: 0}
+  plrscrpt: {fileID: 0}
   damage: 1
+  cooldown: 0
   startTimeBtwAttack: 0
   attackRangeX: 2
   attackRangeY: 5
   attackPos: {fileID: 2361420611433705904}
-  whatIsEnemies:
-    serializedVersion: 2
-    m_Bits: 256
+  canAttack: 0
 --- !u!114 &2361420610501937072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +149,7 @@ MonoBehaviour:
   shootCoolDown: 0
   meleeCoolDown: 0
   lookingRight: 1
+  canAttack: 0
   throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
     type: 3}
   throwingCard2: {fileID: 7655508523414071973, guid: 9e7bba993eaec934bbee1db25cf14f21,
@@ -156,6 +159,7 @@ MonoBehaviour:
   throwingCard4: {fileID: 5652454831798775770, guid: ee15379b78b9cc54dbb9f6adfc2b3fe3,
     type: 3}
   Anim: {fileID: 0}
+  plrattack: {fileID: 0}
 --- !u!50 &2361420610501937074
 Rigidbody2D:
   serializedVersion: 4
@@ -217,6 +221,7 @@ MonoBehaviour:
   shootCoolDown: 0
   meleeCoolDown: 0
   lookingRight: 1
+  canAttack: 0
   throwingCard1: {fileID: 8372250421901433618, guid: e0494e294952e4f4c85c318ccb984e77,
     type: 3}
   throwingCard2: {fileID: 7655508523414071973, guid: 9e7bba993eaec934bbee1db25cf14f21,
@@ -226,6 +231,7 @@ MonoBehaviour:
   throwingCard4: {fileID: 5652454831798775770, guid: ee15379b78b9cc54dbb9f6adfc2b3fe3,
     type: 3}
   Anim: {fileID: 2361420610501937068}
+  plrattack: {fileID: 0}
 --- !u!61 &2361420610501937066
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -251,6 +257,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.33405048, y: 0.63162136}
+  m_EdgeRadius: 0
+--- !u!61 &5365098230460950288
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2361420610501937077}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.8}
   m_EdgeRadius: 0
 --- !u!1 &2361420611089009352
 GameObject:

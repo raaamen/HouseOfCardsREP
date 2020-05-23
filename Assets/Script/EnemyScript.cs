@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
+
 public class EnemyScript : MonoBehaviour
 {
     //Refrences
@@ -17,6 +19,8 @@ public class EnemyScript : MonoBehaviour
     public int maxHealth;
 
     //Animations
+    public Animator anim;
+
 
     private void Start()
     {
@@ -59,9 +63,16 @@ public class EnemyScript : MonoBehaviour
         {
             player.Damage(5);
         }
-        if (collision.CompareTag("Range"))
+        if (collision.CompareTag("Player"))
         {
-
+            anim.SetBool("inRange", true );
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            anim.SetBool("inRange", false);
         }
     }
     public void TakeDamage(int damage)
