@@ -2,24 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class GameManagerScript : MonoBehaviour
+
+public class SceneChange : MonoBehaviour
 {
-    public PlayerScript Player;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
+
     // Update is called once per frame
     void Update()
     {
-
+        
     }
-
-    void PlayerDie()
+    public void OnMouseUp()
     {
-        SceneManager.LoadScene("Basement");
+        SceneManager.LoadScene("FirstFloor");
     }
-
-
 }
