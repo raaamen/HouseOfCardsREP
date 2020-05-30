@@ -60,6 +60,7 @@ public class PlayerScript : MonoBehaviour
         if (Health <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("Basement");
         }
 
         // Allows the player to use WASD for movement.
@@ -139,6 +140,10 @@ public class PlayerScript : MonoBehaviour
         }
         
 
+        if (Input.GetKey(KeyCode.R))
+        {
+            SceneManager.LoadScene("Basement");
+        }
 
     }
     public void Damage(int dmg)
