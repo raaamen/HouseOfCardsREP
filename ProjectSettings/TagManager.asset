@@ -13,6 +13,8 @@ TagManager:
   - Sword
   - Dummy
   - SwordEnemy
+  - HopEnemy
+  - Range
   layers:
   - Default
   - TransparentFX
