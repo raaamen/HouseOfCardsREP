@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
+    public AudioSource ranged;
     //GameObjects
 
 
@@ -49,7 +50,7 @@ public class PlayerScript : MonoBehaviour
 
         plrattack = GetComponent<PlayerAttack>();
 
-        Health = 100;
+        Health = 25;
     }
 
     void Update()
@@ -107,6 +108,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K) && shootCoolDown >= 1)
         {
             Anim.SetBool("Throwing", true);
+            GetComponent<AudioSource>().Play();
         }else
         {
             Anim.SetBool("Throwing", false);

@@ -55,6 +55,7 @@ public class EnemyScript : MonoBehaviour
         if (curHealth <= 0)
         {
             Destroy(gameObject);
+            GetComponent<AudioSource>().Play();
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
