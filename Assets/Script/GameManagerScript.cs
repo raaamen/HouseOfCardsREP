@@ -20,6 +20,10 @@ public class GameManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("Basement");
     }
+    void SpawnEnemies()
+    {
+
+    }
 
 
 }
