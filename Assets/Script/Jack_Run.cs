@@ -7,7 +7,7 @@ public class Jack_Run : StateMachineBehaviour
 
     public int attemptedAttacks;
 
-    public float speed = 4f;
+
     public float attackRange = 3f;
     public float timer;
 
@@ -18,9 +18,11 @@ public class Jack_Run : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        Debug.Log("first phase");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         boss = animator.GetComponent<Rigidbody2D>();
         jack = animator.GetComponent<JackScript>();
+        animator.ResetTrigger("CanStart");
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -29,19 +31,23 @@ public class Jack_Run : StateMachineBehaviour
         //after 3 attempted attacks
         jack.LookAtPlayer();
         Vector3 target = new Vector3(player.position.x, player.position.y);
-        Vector3 newPos = Vector3.MoveTowards(boss.position, target, speed * Time.fixedDeltaTime);
+        float newspeed = 10 * Time.deltaTime;
+        Vector3 newPos = Vector3.MoveTowards(boss.position, target, newspeed);
+        
         boss.MovePosition(newPos);
 
         timer += Time.fixedDeltaTime;
 
         if (Vector2.Distance(player.position, boss.position) <= attackRange)
         {
+            Debug.Log("attacking");
             animator.SetTrigger("Attacking");
             jack.attemptedAttacks++;
         }
 
         if (timer >= 5f)
         {
+            Debug.Log("charging");
             animator.SetTrigger("Charging");
             
         }

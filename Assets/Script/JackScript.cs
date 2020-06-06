@@ -5,15 +5,41 @@ using UnityEngine;
 public class JackScript : MonoBehaviour
 {
 
-    public int health;
+    private int _health = 20;
+    public int Health{
+        get
+        {
+            return _health;
+        }
+        set
+        {
+            Debug.Log("Health before card: " + _health);
+            Debug.Log("Damage taken"+value);
+            _health -= value;
+            Debug.Log("Health after card: "+_health);
+            if (_health <= 0)
+            {
+                animator.SetTrigger("Death");
+            }
+        }
+    }
     public int attemptedAttacks;
 
     public Transform player;
 
     public bool isFlipped = false;
 
+    public Animator animator;
+
+    private void Awake()
+    {
+        
+        animator = GetComponent<Animator>();
+    }
+
     public void LookAtPlayer()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         Vector3 flipped = transform.localScale;
         flipped.z *= -1f;
 
@@ -31,15 +57,18 @@ public class JackScript : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag=="Bullet")
+        {
+            Health -= 1;
+            Destroy(collision.gameObject);
+        }
         
     }
+    
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
+
 }

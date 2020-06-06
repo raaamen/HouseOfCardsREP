@@ -5,7 +5,7 @@ using UnityEngine;
 public class Jack_Dash : StateMachineBehaviour
 {
 
-    public float speed = 6f;
+    public float speed = 20f;
 
     Transform player;
     Rigidbody2D boss;
@@ -31,7 +31,7 @@ public class Jack_Dash : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        newPos = Vector3.MoveTowards(boss.position, target, speed * Time.fixedDeltaTime);
+        newPos = Vector3.MoveTowards(boss.position, target, 25 * Time.fixedDeltaTime);
         boss.MovePosition(newPos);
         if ((Vector3)boss.position == target)
         {

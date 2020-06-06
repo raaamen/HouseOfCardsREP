@@ -19,6 +19,7 @@ public class Jack_Charge : StateMachineBehaviour
         waitTimer += Time.fixedDeltaTime;
         if (waitTimer>=2)
         {
+            Debug.Log("dashing");
             animator.SetTrigger("Dashing");
         }
     }
