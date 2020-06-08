@@ -8,15 +8,12 @@ public class JackScript : MonoBehaviour
     private int _health = 20;
     public int Health{
         get
-        {
+        {   
             return _health;
         }
         set
         {
-            Debug.Log("Health before card: " + _health);
-            Debug.Log("Damage taken"+value);
-            _health -= value;
-            Debug.Log("Health after card: "+_health);
+            _health = value;
             if (_health <= 0)
             {
                 animator.SetTrigger("Death");
@@ -61,7 +58,7 @@ public class JackScript : MonoBehaviour
     {
         if (collision.gameObject.tag=="Bullet")
         {
-            Health -= 1;
+            Health--;
             Destroy(collision.gameObject);
         }
         
