@@ -60,8 +60,8 @@ public class PlayerScript : MonoBehaviour
 
         if (Health <= 0)
         {
-            Destroy(gameObject);
-            SceneManager.LoadScene("Basement");
+            GetComponent<SpriteRenderer>().sprite = null;
+            
         }
 
         // Allows the player to use WASD for movement.
@@ -96,6 +96,28 @@ public class PlayerScript : MonoBehaviour
         {
             Debug.Log("Attacking anim");
             Anim.SetBool("Attacking", true);
+
+            if (plrattack.colliding)
+            {
+                switch (plrattack.collidingWith.tag)
+                {
+                    case "Dummy":
+                        StartCoroutine(plrattack.EnemyFlashRed(plrattack.collidingWith.gameObject));
+                        plrattack.collidingWith.GetComponent<DummyScript>().TakeDamage(5);
+                        break;
+                    case "Enemy":
+                        plrattack.collidingWith.GetComponent<EnemyScript>().TakeDamage(5);
+                        StartCoroutine(plrattack.EnemyFlashRed(plrattack.collidingWith.gameObject));
+                        break;
+                    case "Jack":
+                        plrattack.collidingWith.GetComponent<JackScript>().TakeDamage(5);
+                        StartCoroutine(plrattack.EnemyFlashRed(plrattack.collidingWith.gameObject));
+                        break;
+                }
+            }
+
+
+
             canAttack = false;
             StartCoroutine(plrattack.WaitForAttack());
         }

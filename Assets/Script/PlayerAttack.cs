@@ -19,14 +19,14 @@ public class PlayerAttack : MonoBehaviour
     public float attackRangeX;
     public float attackRangeY;
 
-
+    
 
     //Transforms
     public Transform attackPos;
 
     //LayerMasks
 
-
+    public bool colliding;
     public bool canAttack;
 
     // Start is called before the first frame update
@@ -45,17 +45,7 @@ public class PlayerAttack : MonoBehaviour
             //Now you can attack
             if (Input.GetKey(KeyCode.J) && collidingWith != null)
             {
-                StartCoroutine(EnemyFlashRed(collidingWith));
-                switch (collidingWith.tag)
-                {
-                    case "Dummy":
-                        collidingWith.GetComponent<DummyScript>().TakeDamage(damage);
-                        break;
-                    case "Enemy":
-                        collidingWith.GetComponent<EnemyScript>().TakeDamage(damage);
-                        break;
-                    
-                }
+                
                 canAttack = false;
                 StartCoroutine("WaitForAttack");
             }
@@ -76,6 +66,7 @@ public class PlayerAttack : MonoBehaviour
 
     public IEnumerator EnemyFlashRed(GameObject enemy)
     {
+        Debug.Log("flashing red");
         if (enemy.activeInHierarchy)
         {
             enemy.GetComponent<SpriteRenderer>().color = Color.red;
@@ -100,10 +91,13 @@ public class PlayerAttack : MonoBehaviour
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
+        colliding = true;
         collidingWith = collision.gameObject;
+        Debug.Log(collidingWith.name);
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
+        colliding = false;
         collidingWith = null;
     }
 
