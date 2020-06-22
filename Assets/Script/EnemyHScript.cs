@@ -21,24 +21,24 @@ public class EnemyHScript : MonoBehaviour
     public int maxHealth;
 
     //Animatiors
-    public Animator jump;
+    //public Animator jump;
 
     //Boolean
     public Boolean canAttack;
 
     //Vector
-    public Vector2 dash;
+    public Vector3 dash;
 
     // Start is called before the first frame update
     void Start()
     {
-        Target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        //Target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         movementSpeed = 2;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
         
         canAttack = false;
 
-        movementSpeed = 2;
+        //movementSpeed = 2;
 
         maxHealth = 5;
 
@@ -50,7 +50,7 @@ public class EnemyHScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards( transform.position, Target.position , movementSpeed*Time.deltaTime);
+        //transform.position = Vector2.MoveTowards( transform.position, Target.position , movementSpeed*Time.deltaTime);
         
         if (canAttack == true)
         {
@@ -59,7 +59,9 @@ public class EnemyHScript : MonoBehaviour
         }
         if (ATimer >= 2)
         {
-            jump.SetBool("Canjump", false);
+            GetComponent<Transform>().position += dash;
+            ATimer = 0;
+            canAttack = false;
         }
         if (dazedTime <= 0)
         {
@@ -89,7 +91,7 @@ public class EnemyHScript : MonoBehaviour
             canAttack = true;
         }else
         {
-            jump.SetBool("Canjump", false);
+            //jump.SetBool("Canjump", false);
         }
     }
     
