@@ -129,13 +129,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 587039257}
-  - component: {fileID: 587039256}
   - component: {fileID: 587039258}
   - component: {fileID: 587039259}
   - component: {fileID: 587039260}
+  - component: {fileID: 587039256}
   m_Layer: 0
   m_Name: EnemyHop
-  m_TagString: HopEnemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,11 +167,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587039255}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.31, y: 6.85, z: -1.2129422}
+  m_LocalPosition: {x: -9.47, y: 9.41, z: -1.212942}
   m_LocalScale: {x: 7.0003076, y: 7.0003076, z: 7.0003076}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &587039258
 SpriteRenderer:
@@ -251,11 +251,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49cc2878d8f5cf44db04badf914fd2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Target: {fileID: 0}
   movementSpeed: 0
   startDazedTime: 0
+  ATimer: 0
   curHealth: 0
   maxHealth: 0
-  jump: {fileID: 587039256}
+  jump: {fileID: 0}
+  canAttack: 0
+  dash: {x: 0, y: 0}
 --- !u!1 &907984486 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4625984820891867045, guid: d36d8c1bdab067e458f72b13f11d9762,
@@ -312,7 +316,7 @@ PrefabInstance:
     - target: {fileID: 3868584669707294463, guid: 02476a723370a984db5005a20a469989,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3868584669707294463, guid: 02476a723370a984db5005a20a469989,
         type: 3}
@@ -356,7 +360,7 @@ PrefabInstance:
     - target: {fileID: 4625984820891867032, guid: d36d8c1bdab067e458f72b13f11d9762,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.84
+      value: -1.36
       objectReference: {fileID: 0}
     - target: {fileID: 4625984820891867032, guid: d36d8c1bdab067e458f72b13f11d9762,
         type: 3}
@@ -460,7 +464,7 @@ PrefabInstance:
     - target: {fileID: 5424519422514154382, guid: d589f11332abded4e8359c9aabd0d6a8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5424519422514154382, guid: d589f11332abded4e8359c9aabd0d6a8,
         type: 3}

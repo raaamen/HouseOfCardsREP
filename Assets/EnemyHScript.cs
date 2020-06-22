@@ -1,33 +1,48 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class EnemyHScript : MonoBehaviour
 {
     //Refrences
-    private Transform Target;
+    public Transform Target;
     private PlayerScript player;
 
     //Floats
     public float movementSpeed;
     private float dazedTime;
     public float startDazedTime;
+    public float ATimer;
 
     //Ints
     public int curHealth;
     public int maxHealth;
 
+    //Animatiors
     public Animator jump;
+
+    //Boolean
+    public Boolean canAttack;
+
+    //Vector
+    public Vector2 dash;
 
     // Start is called before the first frame update
     void Start()
     {
         Target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        movementSpeed = 2;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
+        
+        canAttack = false;
 
         movementSpeed = 2;
 
         maxHealth = 5;
+
+        dazedTime = 0;
 
         curHealth = maxHealth;
     }
@@ -35,9 +50,17 @@ public class EnemyHScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, Target.position, movementSpeed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards( transform.position, Target.position , movementSpeed*Time.deltaTime);
+        
+        if (canAttack == true)
+        {
+            ATimer += Time.deltaTime;
 
-
+        }
+        if (ATimer >= 2)
+        {
+            jump.SetBool("Canjump", false);
+        }
         if (dazedTime <= 0)
         {
             movementSpeed = 2;
@@ -54,6 +77,7 @@ public class EnemyHScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -62,10 +86,10 @@ public class EnemyHScript : MonoBehaviour
         }
         if (collision.CompareTag("Range"))
         {
-            jump.SetBool("jump", true);
+            canAttack = true;
         }else
         {
-            jump.SetBool("jump", false);
+            jump.SetBool("Canjump", false);
         }
     }
     
