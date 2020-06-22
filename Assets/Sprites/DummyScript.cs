@@ -29,6 +29,8 @@ public class DummyScript : MonoBehaviour
     public void TakeDamage(int damage)
     {
         hp -= damage;
+        Debug.Log("Damage Taken: " + damage + " Health: " + hp);
+        
         
     }
 }
