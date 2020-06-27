@@ -464,21 +464,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3868584669707294458, guid: 02476a723370a984db5005a20a469989,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3868584669707294433, guid: 02476a723370a984db5005a20a469989,
         type: 3}
       propertyPath: collidingWith
       value: 
       objectReference: {fileID: 907984486}
-    - target: {fileID: 45741171805784911, guid: 02476a723370a984db5005a20a469989,
-        type: 3}
-      propertyPath: m_TagString
-      value: Range
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02476a723370a984db5005a20a469989, type: 3}
 --- !u!1001 &1170386224993687457

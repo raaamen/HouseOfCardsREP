@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6796082113904620122}
   m_Layer: 0
   m_Name: Radius
-  m_TagString: Untagged
+  m_TagString: Range
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,6 +249,9 @@ MonoBehaviour:
     type: 3}
   Anim: {fileID: 3868584669707294460}
   plrattack: {fileID: 3868584669707294433}
+  audiosrc: {fileID: 0}
+  melee: {fileID: 0}
+  rangedattack: {fileID: 0}
 --- !u!61 &3868584669707294458
 BoxCollider2D:
   m_ObjectHideFlags: 0
