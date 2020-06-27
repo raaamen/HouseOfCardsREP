@@ -157,6 +157,7 @@ MonoBehaviour:
   attackRangeX: 2
   attackRangeY: 5
   attackPos: {fileID: 3868584670671626464}
+  colliding: 0
   canAttack: 0
 --- !u!114 &3868584669707294432
 MonoBehaviour:
@@ -261,7 +262,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00495103, y: 0.0041893125}
+  m_Offset: {x: 0.007785797, y: -0.005731344}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -272,8 +273,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.33405048, y: 0.63162136}
-  m_EdgeRadius: 0.1
+  m_Size: {x: 0.33972, y: 0.61178005}
+  m_EdgeRadius: 0.44
 --- !u!82 &1845429665
 AudioSource:
   m_ObjectHideFlags: 0

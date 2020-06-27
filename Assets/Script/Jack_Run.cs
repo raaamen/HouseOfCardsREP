@@ -23,6 +23,7 @@ public class Jack_Run : StateMachineBehaviour
         boss = animator.GetComponent<Rigidbody2D>();
         jack = animator.GetComponent<JackScript>();
         animator.ResetTrigger("CanStart");
+        timer = 0;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -38,12 +39,7 @@ public class Jack_Run : StateMachineBehaviour
 
         timer += Time.fixedDeltaTime;
 
-        if (Vector2.Distance(player.position, boss.position) <= attackRange)
-        {
-            Debug.Log("attacking");
-            animator.SetTrigger("Attacking");
-            jack.attemptedAttacks++;
-        }
+        
 
         if (timer >= 5f)
         {
@@ -58,8 +54,7 @@ public class Jack_Run : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        timer = 0;
-        animator.ResetTrigger("Attacking");
+        
         attemptedAttacks = 0;
         animator.ResetTrigger("Charging");
     }

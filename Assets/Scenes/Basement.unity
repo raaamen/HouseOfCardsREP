@@ -13643,7 +13643,6 @@ GameObject:
   - component: {fileID: 1811745022}
   - component: {fileID: 1811745021}
   - component: {fileID: 1811745020}
-  - component: {fileID: 1811745019}
   - component: {fileID: 1811745018}
   - component: {fileID: 1811745017}
   - component: {fileID: 1811745016}
@@ -13664,16 +13663,19 @@ GameObject:
   - component: {fileID: 1811745011}
   - component: {fileID: 1811745010}
   - component: {fileID: 1811745006}
+  - component: {fileID: 1811745041}
+  - component: {fileID: 1811745019}
+  - component: {fileID: 1811745042}
   m_Layer: 0
   m_Name: IntroFlowChart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1811745006
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13772,7 +13774,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1811745010
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13799,7 +13801,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1811745011
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13826,7 +13828,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1811745012
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13844,7 +13846,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1811745013
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13985,7 +13987,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 175.74767
     y: 177
-    width: 131.6
+    width: 139.7727
     height: 40
   tint: {r: 1, g: 0.6179246, b: 0.6179246, a: 1}
   useCustomTint: 1
@@ -14012,11 +14014,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1811745005}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ff5d850a887844fe87ae7d366d3ab5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1811745031}
-  waitForFrames: 1
 --- !u!114 &1811745020
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -14123,9 +14124,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: "You see, sir, you are a part of a very special game now. You opened
-    the special box of cards, and now you may enjoy the festivities with us! \rYour
-    task is simple: defeat the enemies, reach the end goal, and claim your prize!"
+  storyText: 'You see, sir, you are a part of a very special game now. You opened
+    the special box of cards, and now you may enjoy the festivities with us! '
   description: 
   character: {fileID: 8595594132572211140}
   portrait: {fileID: 0}
@@ -14316,9 +14316,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 172.2056
+    x: 171.06923
     y: 103
-    width: 138.8
+    width: 149.99998
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14334,6 +14334,7 @@ MonoBehaviour:
   - {fileID: 1811745026}
   - {fileID: 1811745025}
   - {fileID: 1811745024}
+  - {fileID: 1811745042}
   - {fileID: 1811745023}
   - {fileID: 1811745022}
   - {fileID: 1811745021}
@@ -14351,21 +14352,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: -13.583284, y: 74.28394}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.8800001
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1811745031}
+  selectedBlocks: []
   selectedCommands: []
-  variables: []
+  variables:
+  - {fileID: 1811745041}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -14392,7 +14393,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1811745034
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -14419,7 +14420,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1811745035
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -14494,7 +14495,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 172.54205
     y: 274
-    width: 138
+    width: 144.31818
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14550,6 +14551,49 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 3
   durationOLD: 0
+--- !u!114 &1811745041
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811745005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: CanStart
+  value: 0
+--- !u!114 &1811745042
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811745005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 39
+  indentLevel: 0
+  storyText: "Rule Card: \rYour task is simple: defeat the enemies, reach the end
+    goal, and claim your prize!"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1829039285
 GameObject:
   m_ObjectHideFlags: 0
@@ -14630,6 +14674,77 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1849811123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1849811125}
+  - component: {fileID: 1849811124}
+  - component: {fileID: 1849811126}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1849811124
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849811123}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 24.81364, y: -3.0591793}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64317894, y: 28.273396}
+  m_EdgeRadius: 0
+--- !u!4 &1849811125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849811123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.1257584, y: 7.0741377, z: -856.90845}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1849811126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849811123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8dcc333e85ecf745a867c6d463b89ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowchart: {fileID: 1811745005}
 --- !u!1 &1857230174
 GameObject:
   m_ObjectHideFlags: 0

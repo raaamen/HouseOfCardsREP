@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -84,6 +85,7 @@ public class EnemyScript : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
+        Debug.Log("Damage Taken: "+damage+" Health: "+curHealth);
         curHealth -= damage;
         dazedTime = startDazedTime;
     }

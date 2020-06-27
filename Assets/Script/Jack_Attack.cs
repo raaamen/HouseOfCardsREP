@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Jack_Attack : StateMachineBehaviour
 {
+    public GameObject player;
+
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-
+        player = GameObject.FindGameObjectWithTag("Player");
+        player.GetComponent<PlayerScript>().Damage(2);
     }
 
 
@@ -19,7 +22,7 @@ public class Jack_Attack : StateMachineBehaviour
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-
+        animator.ResetTrigger("Attacking");
     }
 
     

@@ -58,12 +58,23 @@ public class JackScript : MonoBehaviour
     {
         if (collision.gameObject.tag=="Bullet")
         {
-            Health--;
+            TakeDamage(1);
             Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag == "Player")
+        {
+            animator.SetTrigger("Attacking");
         }
         
     }
-    
+
+    public void TakeDamage(int damage)
+    {
+        Debug.Log("Damage Taken: " + damage + " Health: " + Health);
+        Health -= damage;
+    }
+
 
 
 
