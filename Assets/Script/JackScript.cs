@@ -18,7 +18,7 @@ public class JackScript : MonoBehaviour
             {
                 animator.SetTrigger("Death");
                 player.position = new Vector3(149.1f, 1.3f, 0.66f);
-                Destroy(player.GetComponent<PlayerScript>());
+                Destroy(player.gameObject.GetComponent<PlayerScript>());
                 flow.SetActive(true);
             }
         }

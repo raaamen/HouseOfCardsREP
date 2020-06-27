@@ -25,7 +25,7 @@ public class EntryCollide : MonoBehaviour
             viewCam.gameObject.SetActive(true);
             flowchart.SetActive(true);
             Debug.Log("Entry triggered");
-            player.GetComponent<PlayerScript>().canMove = false;
+            player.gameObject.GetComponent<PlayerScript>().canMove = false;
             isTriggered = true;
         }
         
@@ -42,7 +42,7 @@ public class EntryCollide : MonoBehaviour
         mainCam.gameObject.SetActive(true);
         viewCam.gameObject.SetActive(false);
         barrier.SetActive(false);
-        player.GetComponent<PlayerScript>().canMove = true;
+        player.gameObject.GetComponent<PlayerScript>().canMove = true;
         flowchart.SetActive(false);
         GetComponentInParent<Animator>().SetTrigger("CanStart");
         gameObject.SetActive(false);

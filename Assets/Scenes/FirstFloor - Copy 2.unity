@@ -5503,11 +5503,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3868584669707294458, guid: 02476a723370a984db5005a20a469989,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3868584669707294461, guid: 02476a723370a984db5005a20a469989,
         type: 3}
       propertyPath: melee
@@ -5518,6 +5513,11 @@ PrefabInstance:
       propertyPath: rangedattack
       value: 
       objectReference: {fileID: 8300000, guid: 4694b2257b7c4b040b43605396c8fe17, type: 3}
+    - target: {fileID: 3868584669707294458, guid: 02476a723370a984db5005a20a469989,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3868584670322154391, guid: 02476a723370a984db5005a20a469989,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -8123,7 +8123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 20
   attemptedAttacks: 0
-  player: {fileID: 0}
+  player: {fileID: 1984526801}
   isFlipped: 0
   animator: {fileID: 0}
   flow: {fileID: 999374586}
