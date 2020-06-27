@@ -18,6 +18,7 @@ TagManager:
   - Castle Intro Collider
   - Jack
   - EnemyHS
+  - DialogueTrigger
   layers:
   - Default
   - TransparentFX
