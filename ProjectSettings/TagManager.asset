@@ -17,6 +17,7 @@ TagManager:
   - Range
   - Castle Intro Collider
   - Jack
+  - EnemyHS
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - 
   - 
   - Enemy
-  - 
+  - Walls
   - 
   - 
   - 

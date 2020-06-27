@@ -57,12 +57,6 @@ public class EnemyHScript : MonoBehaviour
             ATimer += Time.deltaTime;
 
         }
-        if (ATimer >= 2)
-        {
-            GetComponent<Transform>().position += dash;
-            ATimer = 0;
-            canAttack = false;
-        }
         if (dazedTime <= 0)
         {
             movementSpeed = 2;
