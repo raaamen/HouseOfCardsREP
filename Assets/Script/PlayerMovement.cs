@@ -33,15 +33,26 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         animator.SetFloat("Speed", Mathf.Abs(movement.x));
-        animator.SetFloat("SpeedUp", Mathf.Abs(movement.y));
-
+        
         // This Is The Input For The Movement
         
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
         anim1.SetFloat("Speed", Mathf.Abs(movement.x));
-        anim1.SetFloat("SpeedUp", Mathf.Abs(movement.y));
+        
+        
+        if (Input.GetKey(KeyCode.W))
+        {
+            anim1.SetFloat("SpeedUp", Mathf.Abs(movement.y));
+        }else if(Input.GetKey(KeyCode.S))
+        {
+            anim1.SetFloat("GODOWN", movement.y);
+        }else
+        {
+            anim1.SetFloat("SpeedUp", movement.y);
+            anim1.SetFloat("GODOWN", Mathf.Abs(movement.y));
+        }
 
 
         if (Input.GetKey(KeyCode.J) || Input.GetKey(KeyCode.K))

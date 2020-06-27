@@ -19,8 +19,6 @@ public class PlayerAttack : MonoBehaviour
     public float attackRangeX;
     public float attackRangeY;
 
-    
-
     //Transforms
     public Transform attackPos;
 
@@ -50,18 +48,12 @@ public class PlayerAttack : MonoBehaviour
                 StartCoroutine("WaitForAttack");
             }
         }
-        
-        
-
-
-
     }
     void OnDrawGizmosSelected()
     {
             Gizmos.color = Color.red;
             Gizmos.DrawWireCube(attackPos.position, new Vector3(attackRangeX, attackRangeY, 1));
-            
-
+        
     }
 
     public IEnumerator EnemyFlashRed(GameObject enemy)
