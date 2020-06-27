@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: 2ca224e29c927d84eb698ee579765eb9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7715471262115813228
+    second: Scaled Jack Yellow Charge_0
+  - first:
+      213: 5653342389526516411
+    second: Scaled Jack Yellow Charge_1
+  - first:
+      213: -4588100210474063908
+    second: Scaled Jack Yellow Charge_2
+  - first:
+      213: -6832179476019989763
+    second: Scaled Jack Yellow Charge_3
+  - first:
+      213: -4150094622438108790
+    second: Scaled Jack Yellow Charge_4
+  - first:
+      213: 4652655994495209052
+    second: Scaled Jack Yellow Charge_5
+  - first:
+      213: -606223665831067145
+    second: Scaled Jack Yellow Charge_6
+  - first:
+      213: -6478584196387892857
+    second: Scaled Jack Yellow Charge_7
+  - first:
+      213: -1689863546350748057
+    second: Scaled Jack Yellow Charge_8
+  - first:
+      213: 5090837298135294581
+    second: Scaled Jack Yellow Charge_9
+  - first:
+      213: -1628964381010218207
+    second: Scaled Jack Yellow Charge_10
+  - first:
+      213: 4691776461907616006
+    second: Scaled Jack Yellow Charge_11
+  - first:
+      213: 2901062630474431736
+    second: Scaled Jack Yellow Charge_12
+  - first:
+      213: 562144546486663919
+    second: Scaled Jack Yellow Charge_13
+  - first:
+      213: 1056884304651291860
+    second: Scaled Jack Yellow Charge_14
+  - first:
+      213: 3288619231203945518
+    second: Scaled Jack Yellow Charge_15
+  - first:
+      213: 6451139479565880422
+    second: Scaled Jack Yellow Charge_16
+  - first:
+      213: -7557115929400518798
+    second: Scaled Jack Yellow Charge_17
+  - first:
+      213: 3886302917508397340
+    second: Scaled Jack Yellow Charge_18
+  - first:
+      213: 7779184333563690257
+    second: Scaled Jack Yellow Charge_19
+  - first:
+      213: -832678576084211738
+    second: Scaled Jack Yellow Charge_20
+  - first:
+      213: -5988344675817532142
+    second: Scaled Jack Yellow Charge_21
+  - first:
+      213: -570282202913587981
+    second: Scaled Jack Yellow Charge_22
+  - first:
+      213: -3084245098130786460
+    second: Scaled Jack Yellow Charge_23
+  - first:
+      213: -6090463980941713082
+    second: Scaled Jack Yellow Charge_24
+  - first:
+      213: -6590386314060640473
+    second: Scaled Jack Yellow Charge_25
+  - first:
+      213: 3799707618125165937
+    second: Scaled Jack Yellow Charge_26
+  - first:
+      213: -2073120169117485192
+    second: Scaled Jack Yellow Charge_27
+  - first:
+      213: -5712931008802784629
+    second: Scaled Jack Yellow Charge_28
+  - first:
+      213: -6631899698842183130
+    second: Scaled Jack Yellow Charge_29
+  - first:
+      213: -5595230542359690681
+    second: Scaled Jack Yellow Charge_30
+  - first:
+      213: 7509802711117399104
+    second: Scaled Jack Yellow Charge_31
+  - first:
+      213: -4533381022992556801
+    second: Scaled Jack Yellow Charge_32
+  - first:
+      213: 4595619135014679281
+    second: Scaled Jack Yellow Charge_33
+  - first:
+      213: 3879147738033927568
+    second: Scaled Jack Yellow Charge_34
+  - first:
+      213: -5131465503981865829
+    second: Scaled Jack Yellow Charge_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 377
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198d63948de3bbf408df476f4139069a
+      internalID: -7715471262115813228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 377
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a962b4b5846954fa90f71ae957209b
+      internalID: 5653342389526516411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 377
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf602114955325743b4fd4bc4a0518ca
+      internalID: -4588100210474063908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 377
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08aa73007f540a34b981032aecff81d0
+      internalID: -6832179476019989763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 377
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f3831f356f9154188e935ea026d6f7
+      internalID: -4150094622438108790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 377
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d8bb8e3827e814783a05d3621b6a82
+      internalID: 4652655994495209052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 302
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20a952e64c180f4d9cf7744a9b61289
+      internalID: -606223665831067145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_7
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 302
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fda5c282b82dc428c2d08154998d95
+      internalID: -6478584196387892857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_8
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 302
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611c8b95b7cd5874eadd6e9241da0362
+      internalID: -1689863546350748057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 302
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8aad64efc69884bb13ea2f829ae16b
+      internalID: 5090837298135294581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_10
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 302
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a8cbc5cc09cb9428f86250114a7601
+      internalID: -1628964381010218207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_11
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 302
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e169607f7fd1644b9600914a5d67fe
+      internalID: 4691776461907616006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 227
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56045f70aa907e49bf46c8c59a4e99a
+      internalID: 2901062630474431736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_13
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 227
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c05f6a1bcb32d499714dc361e8b52a
+      internalID: 562144546486663919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_14
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 227
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc515f6654a3f944b40d8fb67e1d2d3
+      internalID: 1056884304651291860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 227
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b9dc80b9a434b44af41cf154f0147f
+      internalID: 3288619231203945518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_16
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 227
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2c79ae5a72ddd4f95f8dae39af3a16
+      internalID: 6451139479565880422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_17
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 227
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f079de7c1156584385c55c4f1fde625
+      internalID: -7557115929400518798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 152
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e38dd0c7125ba49bdef061a882ccf6
+      internalID: 3886302917508397340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_19
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 152
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17828dd4951ee00449393943c4ba4ca3
+      internalID: 7779184333563690257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_20
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 152
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1f83e485c8d244abe5a30a4cbd04dd
+      internalID: -832678576084211738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 152
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa652a513a219b46910341ac113d36b
+      internalID: -5988344675817532142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_22
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 152
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a3582e2d768474e8e87ab253bbf03e
+      internalID: -570282202913587981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_23
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 152
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8820f1625c8ad3148975fcc7f8c1275f
+      internalID: -3084245098130786460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e5eefabb824cf4f809834c20ce3979
+      internalID: -6090463980941713082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_25
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 77
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23842044d88329645be9dbde6cef4b47
+      internalID: -6590386314060640473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_26
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 77
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28550990717fe5e479b0c1d75c1e4e6b
+      internalID: 3799707618125165937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 77
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3332d73b0fd5164b849ef458f5d342a
+      internalID: -2073120169117485192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_28
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 77
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d805b93f715d4644ba446a0e4a44a487
+      internalID: -5712931008802784629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_29
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 77
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628d2bf3c2af3484180018ce0ae9788a
+      internalID: -6631899698842183130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff09c7f30dd44e3408fbaa646c7e3aa4
+      internalID: -5595230542359690681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_31
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 2
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e441d294be1eca48a3290a68830cc1a
+      internalID: 7509802711117399104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_32
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bde63a7dec6f94489018bda9544544d
+      internalID: -4533381022992556801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47112bcf630f51f4caa8acf219df744e
+      internalID: 4595619135014679281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_34
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e625047c67d47eb428f4f258b279a79d
+      internalID: 3879147738033927568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Yellow Charge_35
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 2
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67e4fe6a34d8ad44af0fa521b9b08ca
+      internalID: -5131465503981865829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
