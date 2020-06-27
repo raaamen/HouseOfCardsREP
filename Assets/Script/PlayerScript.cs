@@ -100,14 +100,20 @@ public class PlayerScript : MonoBehaviour
 
             if (plrattack.colliding)
             {
+                Debug.Log("attacking correctly");
+                Debug.Log(plrattack.collidingWith.tag);
                 switch (plrattack.collidingWith.tag)
                 {
                     case "Dummy":
                         StartCoroutine(plrattack.EnemyFlashRed(plrattack.collidingWith.gameObject));
                         plrattack.collidingWith.GetComponent<DummyScript>().TakeDamage(5);
                         break;
-                    case "Enemy":
+                    case "SwordEnemy":
                         plrattack.collidingWith.GetComponent<EnemyScript>().TakeDamage(5);
+                        StartCoroutine(plrattack.EnemyFlashRed(plrattack.collidingWith.gameObject));
+                        break;
+                    case "HopEnemy":
+                        plrattack.collidingWith.GetComponent<EnemyHAI>().TakeDamage(5);
                         StartCoroutine(plrattack.EnemyFlashRed(plrattack.collidingWith.gameObject));
                         break;
                     case "Jack":

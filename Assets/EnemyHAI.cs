@@ -16,6 +16,7 @@ public class EnemyHAI : MonoBehaviour
     bool reachedEndOfPath = false;
     Seeker seeker;
     Rigidbody2D rb;
+    public int health;
 
     // Start is called before the first frame update
     void Start()
@@ -86,5 +87,14 @@ public class EnemyHAI : MonoBehaviour
         {
             currentWaypoint++; 
         }
+
+
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Debug.Log("Damage Taken: " + damage + " Health: " + health);
+        health -= damage;
+        
     }
 }
