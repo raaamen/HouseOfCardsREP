@@ -35,11 +35,18 @@ public class PlayerScript : MonoBehaviour
     public Animator Anim;
 
     public PlayerAttack plrattack;
+
+    public AudioSource audiosrc;
+    public AudioClip melee;
+    public AudioClip rangedattack;
     
 
     // Start is called before the first frame update
     void Start()
     {
+
+        audiosrc = GetComponent<AudioSource>();
+
         Direction = 3;
         shootCoolDown = 2f;
 
@@ -98,6 +105,9 @@ public class PlayerScript : MonoBehaviour
             Debug.Log("Attacking anim");
             Anim.SetBool("Attacking", true);
 
+            audiosrc.clip = melee;
+            audiosrc.Play();
+
             if (plrattack.colliding)
             {
                 Debug.Log("attacking correctly");
@@ -147,6 +157,8 @@ public class PlayerScript : MonoBehaviour
         //Allows the player to shoot
         if (Input.GetKey(KeyCode.K) && shootCoolDown >= 1)
         {
+            audiosrc.clip = rangedattack;
+            audiosrc.Play();
             //Facing North
             if (Direction == 1)
             {

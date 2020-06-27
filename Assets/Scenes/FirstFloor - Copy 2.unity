@@ -5451,6 +5451,16 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3868584669707294461, guid: 02476a723370a984db5005a20a469989,
+        type: 3}
+      propertyPath: melee
+      value: 
+      objectReference: {fileID: 8300000, guid: 9689cccb04910f743ba7ed5c2853e68e, type: 3}
+    - target: {fileID: 3868584669707294461, guid: 02476a723370a984db5005a20a469989,
+        type: 3}
+      propertyPath: rangedattack
+      value: 
+      objectReference: {fileID: 8300000, guid: 4694b2257b7c4b040b43605396c8fe17, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02476a723370a984db5005a20a469989, type: 3}
 --- !u!1 &368446415

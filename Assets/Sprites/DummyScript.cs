@@ -10,6 +10,7 @@ public class DummyScript : MonoBehaviour
     {
         if (hp <= 0)
         {
+            GetComponent<AudioSource>().Play();
             Destroy(gameObject);
         }
     }
