@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: dbfcb21ee20f55e49b3c8d8ff14182e2
+  - enabled: 1
+    path: Assets/Scenes/Cinematic.unity
+    guid: 477cf7330866fd442816c794ecf463d0
+  - enabled: 1
     path: Assets/Scenes/Basement.unity
     guid: e4833f901b1a046f4b72853ae0aa93a2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FirstFloor.unity
     guid: a56a20fa714312544b2f19b45358d767
+  - enabled: 1
+    path: Assets/Scenes/FirstFloor - Copy 2.unity
+    guid: 774acd0f8d76f1d4c9a3fe4c9298df5d
   m_configObjects: {}
