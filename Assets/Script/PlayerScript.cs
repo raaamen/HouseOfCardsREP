@@ -25,6 +25,7 @@ public class PlayerScript : MonoBehaviour
     //Booleans
     public bool lookingRight = true;
     public bool canAttack;
+    public bool canMove;
 
     //Refrences
     public GameObject throwingCard1;
@@ -44,7 +45,7 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        canMove = true;
         audiosrc = GetComponent<AudioSource>();
 
         Direction = 3;
@@ -73,24 +74,25 @@ public class PlayerScript : MonoBehaviour
         }
 
         // Allows the player to use WASD for movement.
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && canMove)
         {
             Direction = 1;
             //transform.localRotation = Quaternion.Euler(0, 0, 90);
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) && canMove)
         {
             Direction = 4;
             //transform.localRotation = Quaternion.Euler(0, 0, -90);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && canMove)
         {
             Direction = 2;
             //transform.localRotation = Quaternion.Euler(0, 0, 0);
 
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && canMove)
         {
+            Debug.Log(canMove);
             Direction = 3;
             //transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
