@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EntryCollide : MonoBehaviour
 {
 
@@ -45,6 +46,11 @@ public class EntryCollide : MonoBehaviour
         flowchart.SetActive(false);
         GetComponentInParent<Animator>().SetTrigger("CanStart");
         gameObject.SetActive(false);
+    }
+
+    public void loadEnd()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
     }
 
 }

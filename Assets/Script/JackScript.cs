@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JackScript : MonoBehaviour
 {
-
+    [SerializeField]
     private int _health = 20;
     public int Health{
         get
@@ -17,6 +17,9 @@ public class JackScript : MonoBehaviour
             if (_health <= 0)
             {
                 animator.SetTrigger("Death");
+                player.position = new Vector3(149.1f, 1.3f, 0.66f);
+                Destroy(player.GetComponent<PlayerScript>());
+                flow.SetActive(true);
             }
         }
     }
@@ -27,6 +30,8 @@ public class JackScript : MonoBehaviour
     public bool isFlipped = false;
 
     public Animator animator;
+
+    public GameObject flow;
 
     private void Awake()
     {
