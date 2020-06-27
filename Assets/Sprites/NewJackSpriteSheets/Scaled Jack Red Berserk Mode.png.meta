@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: 6238ecdc2e135b94fba6d4d99474d342
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2047286825592844985
+    second: Scaled Jack Red Berserk Mode_0
+  - first:
+      213: 1613515196387653649
+    second: Scaled Jack Red Berserk Mode_1
+  - first:
+      213: 7210938023373206087
+    second: Scaled Jack Red Berserk Mode_2
+  - first:
+      213: 8200898394267784964
+    second: Scaled Jack Red Berserk Mode_3
+  - first:
+      213: 3096673693690951433
+    second: Scaled Jack Red Berserk Mode_4
+  - first:
+      213: -4661085747778604753
+    second: Scaled Jack Red Berserk Mode_5
+  - first:
+      213: -6477843898416858834
+    second: Scaled Jack Red Berserk Mode_6
+  - first:
+      213: 2504157383001971704
+    second: Scaled Jack Red Berserk Mode_7
+  - first:
+      213: 8463324144248416048
+    second: Scaled Jack Red Berserk Mode_8
+  - first:
+      213: -6072997771743374847
+    second: Scaled Jack Red Berserk Mode_9
+  - first:
+      213: -2033746698921872452
+    second: Scaled Jack Red Berserk Mode_10
+  - first:
+      213: 6228365050799988991
+    second: Scaled Jack Red Berserk Mode_11
+  - first:
+      213: -6508744397982768170
+    second: Scaled Jack Red Berserk Mode_12
+  - first:
+      213: -1565050558711635023
+    second: Scaled Jack Red Berserk Mode_13
+  - first:
+      213: -6529998616788783790
+    second: Scaled Jack Red Berserk Mode_14
+  - first:
+      213: -4708486124197136836
+    second: Scaled Jack Red Berserk Mode_15
+  - first:
+      213: -7511281080121966348
+    second: Scaled Jack Red Berserk Mode_16
+  - first:
+      213: -2239760582838013297
+    second: Scaled Jack Red Berserk Mode_17
+  - first:
+      213: -7040253995435536761
+    second: Scaled Jack Red Berserk Mode_18
+  - first:
+      213: -6716182068685390464
+    second: Scaled Jack Red Berserk Mode_19
+  - first:
+      213: -6194014919976138982
+    second: Scaled Jack Red Berserk Mode_20
+  - first:
+      213: -2121138777530899408
+    second: Scaled Jack Red Berserk Mode_21
+  - first:
+      213: -6673480648710353102
+    second: Scaled Jack Red Berserk Mode_22
+  - first:
+      213: -1330259109837036802
+    second: Scaled Jack Red Berserk Mode_23
+  - first:
+      213: 4758035758343683609
+    second: Scaled Jack Red Berserk Mode_24
+  - first:
+      213: 1297242331330952269
+    second: Scaled Jack Red Berserk Mode_25
+  - first:
+      213: 442319536949471904
+    second: Scaled Jack Red Berserk Mode_26
+  - first:
+      213: 6224526014521662743
+    second: Scaled Jack Red Berserk Mode_27
+  - first:
+      213: 2078211709018053707
+    second: Scaled Jack Red Berserk Mode_28
+  - first:
+      213: 7395633169528417774
+    second: Scaled Jack Red Berserk Mode_29
+  - first:
+      213: -6363962378610953335
+    second: Scaled Jack Red Berserk Mode_30
+  - first:
+      213: 7537002877464612896
+    second: Scaled Jack Red Berserk Mode_31
+  - first:
+      213: -3491959817271589885
+    second: Scaled Jack Red Berserk Mode_32
+  - first:
+      213: 5306929392779515918
+    second: Scaled Jack Red Berserk Mode_33
+  - first:
+      213: 8208982209984458676
+    second: Scaled Jack Red Berserk Mode_34
+  - first:
+      213: -5299641738637602380
+    second: Scaled Jack Red Berserk Mode_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 377
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fe7bdb59696034d9133d034075ad32
+      internalID: 2047286825592844985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 377
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbd3d788fa7f3d4d9a7a3fdf1e8747c
+      internalID: 1613515196387653649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 377
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b40ef3778a29547bf393e8242dc443
+      internalID: 7210938023373206087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 377
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a417fb20552ec4f9c7dad75419b419
+      internalID: 8200898394267784964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 377
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7c756f158b89349823422604ab98c6
+      internalID: 3096673693690951433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 377
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eecf1c349b2ea84194eaf94ea1839ef
+      internalID: -4661085747778604753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 302
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457e9b9f05647984389741fd608bccfd
+      internalID: -6477843898416858834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_7
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 302
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521ccef028042244b8c114813a2c72c4
+      internalID: 2504157383001971704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_8
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 302
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d5445ccfe3bdf4580e5f6145b88139
+      internalID: 8463324144248416048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 302
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bc7b52994e06d409c73763ac85af02
+      internalID: -6072997771743374847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_10
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 302
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06d224b33955524a89771eff4e05038
+      internalID: -2033746698921872452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_11
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 302
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f3217b816353a49bf83dfcb0f6d816
+      internalID: 6228365050799988991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 227
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8f0f171fdef324781b94bac29168e7
+      internalID: -6508744397982768170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_13
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 227
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc53abd486bf4fc4dae4d5b364b78fd0
+      internalID: -1565050558711635023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_14
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 227
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735cdb1f8d799f543994ea01c80fcbfb
+      internalID: -6529998616788783790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 227
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e37e1ee5bff28049a6221689092c2b5
+      internalID: -4708486124197136836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_16
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 227
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10992c69b56be7d478253e74964aed4a
+      internalID: -7511281080121966348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 227
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d8742f7ae06f64190a35690e3b4a28
+      internalID: -2239760582838013297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 152
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4fc70ec63e9e34184cf5f6eac29350
+      internalID: -7040253995435536761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_19
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 152
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2515560947b814ab3c64b84f882d41
+      internalID: -6716182068685390464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_20
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 152
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b109b2c35968f5e41af6e1b64d30eddf
+      internalID: -6194014919976138982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 152
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29480b83025ff4419fc6008af3cb3b7
+      internalID: -2121138777530899408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_22
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 152
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e9d1ee72526134a9c16232e6c1c4f0
+      internalID: -6673480648710353102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_23
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 152
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95add7ba38cbe9846be58687399c7f4b
+      internalID: -1330259109837036802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d11388d2d2a241449e79ecd496bf608
+      internalID: 4758035758343683609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_25
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 77
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43239c931e1369840826389ad5248029
+      internalID: 1297242331330952269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_26
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 77
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c168d81860242864b82529c87df81c8f
+      internalID: 442319536949471904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 77
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4a87fc3baf430468493f89aa3185cc
+      internalID: 6224526014521662743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_28
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 77
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df7911aee162ff4ca0be1fd87d1c072
+      internalID: 2078211709018053707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_29
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 77
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9f40106eb638441b2ff9d493ae56cd
+      internalID: 7395633169528417774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4b89fc4bf00b84eab50dcf9fb3e0e6
+      internalID: -6363962378610953335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_31
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 2
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419e0c9d8f038c247b565f51f4df6332
+      internalID: 7537002877464612896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_32
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721becf93c9eae44993778611795739d
+      internalID: -3491959817271589885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedc92da5e1455a4ebbaaf27125862c6
+      internalID: 5306929392779515918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_34
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f4331c1d508ae41936b7ca67fcb5bb
+      internalID: 8208982209984458676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scaled Jack Red Berserk Mode_35
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 2
+        width: 82
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5916a77c87a3984e9f4fbdf3a89b550
+      internalID: -5299641738637602380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
