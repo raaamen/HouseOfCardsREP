@@ -42,11 +42,11 @@ public class HealthSystemSc : MonoBehaviour
     {
         if (plr.Health < 20)
         {
-            heart1.SetActive(false);
+            heart5.SetActive(false);
         }
         if (plr.Health < 15)
         {
-            heart2.SetActive(false);
+            heart4.SetActive(false);
         }
         if (plr.Health < 10)
         {
@@ -54,19 +54,21 @@ public class HealthSystemSc : MonoBehaviour
         }
         if (plr.Health < 5)
         {
-            heart4.SetActive(false);
+            heart2.SetActive(false);
         }
         if (plr.Health <= 0)
         {
-            heart5.SetActive(false);
+            heart1.SetActive(false);
             playerDie();
         }
     }
-
-
+    
+    
     void playerDie()
     {
+        plr.gameObject.GetComponent<SpriteRenderer>().sprite = null;
         dieText.SetActive(true);
+
         StartCoroutine("countDownToReset");
     }
 
@@ -78,7 +80,7 @@ public class HealthSystemSc : MonoBehaviour
         yield return new WaitForSeconds(1);
         countdownText.text = "Restarting level in 1...";
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("Basement");
+        SceneManager.LoadScene("FirstFloor - Copy 2");
         yield return null;
     }
 

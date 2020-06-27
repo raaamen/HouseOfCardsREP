@@ -61,6 +61,11 @@ public class JackScript : MonoBehaviour
             TakeDamage(1);
             Destroy(collision.gameObject);
         }
+
+        if (collision.gameObject.tag == "Player")
+        {
+            animator.SetTrigger("Attacking");
+        }
         
     }
 

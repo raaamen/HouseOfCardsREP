@@ -20,7 +20,7 @@ public class GoToFirstFloor : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("FirstFloor");
+            SceneManager.LoadScene("FirstFloor - Copy 2");
         }
     }
 }

@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: 0a677c99784ba0345b57fa44c4ebda6c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7059366295469263117
+    second: Jack Yellow Charge_0
+  - first:
+      213: 673428153782865758
+    second: Jack Yellow Charge_1
+  - first:
+      213: 6715424132276052686
+    second: Jack Yellow Charge_2
+  - first:
+      213: -4756849189771850418
+    second: Jack Yellow Charge_3
+  - first:
+      213: -8746954784913111215
+    second: Jack Yellow Charge_4
+  - first:
+      213: -5245103977618371929
+    second: Jack Yellow Charge_5
+  - first:
+      213: 6668532372070430685
+    second: Jack Yellow Charge_6
+  - first:
+      213: 3565957593790123238
+    second: Jack Yellow Charge_7
+  - first:
+      213: -8040781827220021586
+    second: Jack Yellow Charge_8
+  - first:
+      213: -2268649554587150468
+    second: Jack Yellow Charge_9
+  - first:
+      213: 6803550688113795249
+    second: Jack Yellow Charge_10
+  - first:
+      213: -3132413803753263560
+    second: Jack Yellow Charge_11
+  - first:
+      213: -2324471621326462491
+    second: Jack Yellow Charge_12
+  - first:
+      213: 6915946064917043390
+    second: Jack Yellow Charge_13
+  - first:
+      213: -1091280711769624466
+    second: Jack Yellow Charge_14
+  - first:
+      213: -9040877886983212280
+    second: Jack Yellow Charge_15
+  - first:
+      213: 2127000123895884317
+    second: Jack Yellow Charge_16
+  - first:
+      213: 2693829008258686855
+    second: Jack Yellow Charge_17
+  - first:
+      213: 7329677296850849284
+    second: Jack Yellow Charge_18
+  - first:
+      213: 2911461475052034837
+    second: Jack Yellow Charge_19
+  - first:
+      213: -7118430813621862026
+    second: Jack Yellow Charge_20
+  - first:
+      213: -706268517857665616
+    second: Jack Yellow Charge_21
+  - first:
+      213: 7090485254264509327
+    second: Jack Yellow Charge_22
+  - first:
+      213: -3218868535891873497
+    second: Jack Yellow Charge_23
+  - first:
+      213: -6808144479230195552
+    second: Jack Yellow Charge_24
+  - first:
+      213: 5282458033440838674
+    second: Jack Yellow Charge_25
+  - first:
+      213: 3931433377652769940
+    second: Jack Yellow Charge_26
+  - first:
+      213: -7895759369208338803
+    second: Jack Yellow Charge_27
+  - first:
+      213: 8586153329268192024
+    second: Jack Yellow Charge_28
+  - first:
+      213: -8986699373949948022
+    second: Jack Yellow Charge_29
+  - first:
+      213: -9103347973920134596
+    second: Jack Yellow Charge_30
+  - first:
+      213: -4677202297259239897
+    second: Jack Yellow Charge_31
+  - first:
+      213: -5735963153286140038
+    second: Jack Yellow Charge_32
+  - first:
+      213: -504602432258853029
+    second: Jack Yellow Charge_33
+  - first:
+      213: 744861267568986325
+    second: Jack Yellow Charge_34
+  - first:
+      213: -8852208191334194705
+    second: Jack Yellow Charge_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jack Yellow Charge_0
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 3768
+        width: 553
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310f80f45cc3a3b4b96414969049a38f
+      internalID: 7059366295469263117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_1
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 3768
+        width: 812
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdf1e9519339c242811a8d3c32ae1ae
+      internalID: 673428153782865758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_2
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 3768
+        width: 825
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d258d03bfe037544a8d55b1bdc5b9cdc
+      internalID: 6715424132276052686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_3
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 3768
+        width: 824
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab053003847fd44fb734adbdc789fdb
+      internalID: -4756849189771850418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_4
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 3768
+        width: 822
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f279843f245e74783bb37f96c784f9
+      internalID: -8746954784913111215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_5
+      rect:
+        serializedVersion: 2
+        x: 4248
+        y: 3768
+        width: 825
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8cfa9d55393bd4cacd89b2ba053120
+      internalID: -5245103977618371929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3018
+        width: 822
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5476c6d380bcac24b8e4cc2477e7fcad
+      internalID: 6668532372070430685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_7
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 3018
+        width: 812
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ebe98ad6b514846ab8c0486a5a4b72
+      internalID: 3565957593790123238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_8
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 3018
+        width: 815
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9cd8a7b2375e244bee7ad9414355c1
+      internalID: -8040781827220021586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_9
+      rect:
+        serializedVersion: 2
+        x: 2557
+        y: 3018
+        width: 815
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed261f18dfc5ee24b8f4f24d8b1830c8
+      internalID: -2268649554587150468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_10
+      rect:
+        serializedVersion: 2
+        x: 3409
+        y: 3018
+        width: 812
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008aae3571111d04c9ef71fe0eb8331b
+      internalID: 6803550688113795249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_11
+      rect:
+        serializedVersion: 2
+        x: 4258
+        y: 3018
+        width: 815
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6dcfab111b8504f80697805bc5edd5
+      internalID: -3132413803753263560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2269
+        width: 815
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984a46fc77999bf44b3089ea93f93b51
+      internalID: -2324471621326462491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_13
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 2269
+        width: 812
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40db15cc74eb7f4b8f4ba5b3946b31e
+      internalID: 6915946064917043390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_14
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 2269
+        width: 815
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72553994231308544a2b0f4756b5a40c
+      internalID: -1091280711769624466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_15
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 2269
+        width: 824
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f91bbda89ccf940ad0b22b45f4fe47
+      internalID: -9040877886983212280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_16
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 2269
+        width: 822
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf621991df9f23c47aaf8c0e63896a1d
+      internalID: 2127000123895884317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_17
+      rect:
+        serializedVersion: 2
+        x: 4258
+        y: 2269
+        width: 815
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85527d07251e8e4ba7766aa658171a1
+      internalID: 2693829008258686855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1519
+        width: 815
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ef65e0fb20be0469ea1ffcf5aadb8a
+      internalID: 7329677296850849284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_19
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1519
+        width: 812
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4872bab3476a3c44b42e62ca4cb50c0
+      internalID: 2911461475052034837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_20
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 1519
+        width: 815
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5373981aa33b64a4ab7c72200662509a
+      internalID: -7118430813621862026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_21
+      rect:
+        serializedVersion: 2
+        x: 2557
+        y: 1519
+        width: 815
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14915f594bcad7c449e43b7380abd9ac
+      internalID: -706268517857665616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_22
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 1519
+        width: 822
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4fb4898d9119c4aa76928e4ed10e87
+      internalID: 7090485254264509327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_23
+      rect:
+        serializedVersion: 2
+        x: 4248
+        y: 1519
+        width: 825
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc17904a3545db41a2de95e6cda7dfe
+      internalID: -3218868535891873497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 767
+        width: 822
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f7c029a56a4624e978032eed69c906
+      internalID: -6808144479230195552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_25
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 767
+        width: 812
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647d9372a32f2824f8d934373231c570
+      internalID: 5282458033440838674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_26
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 767
+        width: 815
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5b60ee87f0f154a8d8be6e0f8f3425
+      internalID: 3931433377652769940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_27
+      rect:
+        serializedVersion: 2
+        x: 2557
+        y: 767
+        width: 815
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004ceb1c98d572a44a7a71a5ddcd8717
+      internalID: -7895759369208338803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_28
+      rect:
+        serializedVersion: 2
+        x: 3409
+        y: 767
+        width: 812
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32afe1574a4ddc4fb01cbdc5700c908
+      internalID: 8586153329268192024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_29
+      rect:
+        serializedVersion: 2
+        x: 4248
+        y: 767
+        width: 825
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511947d697d2d4b4a974ac3da68875d1
+      internalID: -8986699373949948022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 822
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fa27878d4f353479eb24418388dad9
+      internalID: -9103347973920134596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_31
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 17
+        width: 812
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e82306d3f078c942b9a4e9caad18fc4
+      internalID: -4677202297259239897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_32
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 17
+        width: 815
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81533833ff927f944a1bddc4e322f1fe
+      internalID: -5735963153286140038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_33
+      rect:
+        serializedVersion: 2
+        x: 2557
+        y: 17
+        width: 815
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba585e455296554ab32586a7f66fb74
+      internalID: -504602432258853029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_34
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 17
+        width: 822
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2279e983ab8ff84b8cf3b28ae17917f
+      internalID: 744861267568986325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack Yellow Charge_35
+      rect:
+        serializedVersion: 2
+        x: 4248
+        y: 17
+        width: 825
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033c40a205b50b549a1f383b839a6b7c
+      internalID: -8852208191334194705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

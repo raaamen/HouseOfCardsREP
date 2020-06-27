@@ -61,6 +61,7 @@ public class PlayerScript : MonoBehaviour
         if (Health <= 0)
         {
             GetComponent<SpriteRenderer>().sprite = null;
+            gameObject.SetActive(false);
             
         }
 
@@ -168,6 +169,8 @@ public class PlayerScript : MonoBehaviour
         {
             SceneManager.LoadScene("Basement");
         }
+
+
 
     }
     public void Damage(int dmg)
